@@ -1,0 +1,980 @@
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+
+
+
+
+}
+
+@media (min-width:1200px) and (max-width:1399px){
+
+
+
+
+
+    
+}
+
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+/*@media (min-width:992px) and (max-width:1199px){
+
+
+
+.nav_main ul li{padding:0 15px;}
+.footer_nav{width:65%; float:left;}
+.footer_contact{width:29%;}
+
+.index_pro_slide{
+    background:none;
+}
+.index_pro_slide .bd{
+    width:100%;
+    height:auto;
+}
+.index_pro_slide .bd ul li{
+    width:100%;
+    height:auto;
+}
+.index_pro_slide .hd ul{
+    width:100%;
+}
+.index_pro_slide .hd ul li{
+    width:20%;
+}
+
+
+.about2{
+    height:400px;
+}
+.about2 p{
+    padding:0 15px;
+    padding-top:210px;
+}
+
+
+.contact{
+    padding:50px 15px;
+}
+.map{
+    height:450px;
+}
+
+.net_main{
+    display:none;
+}
+.net_box .net_sidebar{
+    width:700px;
+    float:none;
+    margin:0 auto;
+    margin-bottom:60px;
+}
+
+.htit2{
+    padding:45px 10px;
+}
+.news_box{
+    padding:0 10px;
+}
+
+
+.case_box .list_box{
+    width:230px;
+}
+.case_box .list_box .img_box{
+    width:230px;
+    height:123px;
+}
+
+
+.join_odds_box{
+    padding:0 10px;
+}
+.join_odds_box .list_box .text{
+    width:95%;
+    font-size:13px;
+    line-height:26px;
+    padding-top:20px;
+}
+
+
+.liucheng_box .list_box{
+    width:230px;
+    height:200px;
+}
+.liucheng_box .list_box .img_box{
+    width:230px;
+    height:130px;
+}
+
+
+.pro_box .list_box{
+    width:210px;
+}
+.pro_box .list_box .img_box{
+    width:210px;
+    height:220px;
+    line-height:220px;
+}
+
+
+.prov{
+    padding:50px 10px;
+}
+.prov_slide .bl{
+    width:450px;
+    float:left;
+    display:inline-block;
+}
+.prov_slide .br{
+    width:520px;
+    float:right;
+    display:inline-block;
+}
+.prov_slide .bd li{
+    width:450px;
+}
+.prov_slide .bd li .img_box{
+    width:450px;
+}
+
+
+.provo_slide{
+    padding:50px 10px;
+}
+
+
+
+}
+*/
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+/*@media (min-width:768px) and (max-width:991px){
+
+
+.header_box{height:60px;padding:0 10px;}
+.header_box h1{height:60px;line-height:60px;}
+.header_box h1 img{max-height:38px;}
+.nav_main{height:60px;}
+.nav_main ul li{height:60px; line-height:80px; padding:0 8px;}
+.footer_nav{width:65%; float:left;}
+.footer_contact{width:29%;}
+
+
+
+.htit1 h2{
+    font-size:30px;
+}
+.htit2{
+    padding:45px 10px;
+}
+.htit2 h3{
+    font-size:30px;
+}
+
+
+.index_pro_slide{
+    background:none;
+}
+.index_pro_slide .bd{
+    width:100%;
+    height:auto;
+}
+.index_pro_slide .bd ul li{
+    width:100%;
+    height:auto;
+}
+.index_pro_slide .hd ul{
+    width:100%;
+}
+.index_pro_slide .hd ul li{
+    width:20%;
+    height:80px;
+    background-image:none;
+}
+.index_pro_slide .hd ul li p{
+    padding-top:30px;
+}
+.index_pro_slide .hd ul li:hover,
+.index_pro_slide .hd ul li.on{
+    background-image:none;
+}
+
+
+.about2{
+    height:300px;
+}
+.about2 p{
+    padding:0 15px;
+    padding-top:150px;
+}
+
+
+
+.about3_box .text_box{
+    padding-top:20px;
+}
+.about3_box .text_box .text{
+    max-width:400px;
+}
+.about3_box .pic_box{
+    width:45%;
+    padding:0 2.5%;
+}
+
+.contact{
+    padding:50px 15px;
+}
+
+.map{
+    height:450px;
+}
+
+
+.net_box .net_sidebar{
+    width:700px;
+    float:none;
+    margin:0 auto;
+    margin-bottom:60px;
+}
+
+.news_box{
+    padding:0 10px;
+}
+
+
+
+.case_box .list_box{
+    width:230px;
+}
+.case_box .list_box .img_box{
+    width:230px;
+    height:123px;
+}
+
+
+
+.htit3 h3{
+    font-size:32px;
+}
+
+
+.join_odds_box{
+    padding:0 10px;
+}
+.join_odds_box .list_box .text{
+    width:95%;
+    font-size:13px;
+    line-height:26px;
+    padding-top:10px;
+}
+.join_odds_box .list_box .text h4{
+    font-size:14px;
+}
+
+
+.liucheng_box .list_box{
+    width:180px;
+    height:200px;
+}
+.liucheng_box .list_box .img_box{
+    width:180px;
+    height:130px;
+}
+
+
+.pro_box .list_box{
+    width:210px;
+}
+.pro_box .list_box .img_box{
+    width:210px;
+    height:220px;
+    line-height:220px;
+}
+
+
+
+.prov{
+    padding:50px 10px;
+}
+.prov_slide .bl{
+    width:350px;
+    float:left;
+    display:inline-block;
+}
+.prov_slide .br{
+    width:350px;
+    float:right;
+    display:inline-block;
+}
+.prov_slide .bd li{
+    width:350px;
+    height:370px;
+}
+.prov_slide .bd li .img_box{
+    width:350px;
+    height:370px;
+}
+
+.prov_slide .hd .sslide{
+    max-width:290px;
+    margin:0 auto;
+    position:relative;
+}
+.prov_slide .hd li{
+    width:65px;
+    margin-right:5px;
+}
+.prov_slide .hd li .img_box{
+    width:65px;
+    height:70px;
+}
+
+
+.prov_slide .text_box h3{
+    font-size:20px;
+}
+.prov_slide .text_box h3 a.back{
+    width:110px;
+    font-size:16px;
+    background:#f2f2f2 url(../images/back_bg.png) no-repeat 15px center;
+    background-size: auto 18px;
+    text-indent:50px;
+    margin-top:0;
+}
+.prov_slide .text_info .htit{
+    font-size:14px;
+}
+
+
+
+.provo_slide{
+    padding:50px 10px;
+}
+.provo_slide .swiper-slide{
+    width:200px;
+}
+.provo_slide .swiper-slide .list_box .img_box{
+    width:200px;
+    height:200px;
+    line-height:200px;
+}
+
+
+
+
+
+
+
+
+}*/
+
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+/*@media (min-width: 480px) and (max-width: 767px){
+
+
+.case_box .list_box{
+    width:230px;
+}
+.case_box .list_box .img_box{
+    width:230px;
+    height:123px;
+}
+.case_box .list_box p{
+    height:40px;
+    line-height:40px;
+    font-size:13px;
+}
+
+
+.liucheng_box .list_box{
+    width:230px;
+    height:200px;
+    margin-bottom:10px;
+}
+.liucheng_box .list_box .img_box{
+    width:230px;
+    height:130px;
+}
+
+
+.pro_box .list_box{
+    width:210px;
+}
+.pro_box .list_box .img_box{
+    width:210px;
+    height:220px;
+    line-height:220px;
+}
+.pro_box .list_box .text_box i{
+    font-size:14px;
+}
+
+
+
+
+}
+
+
+
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width: 371px) and (max-width: 479px){
+
+
+.case_box .list_box{
+    width:180px;
+}
+.case_box .list_box .img_box{
+    width:180px;
+    height:95px;
+}
+.case_box .list_box p{
+    height:40px;
+    line-height:40px;
+    font-size:13px;
+}
+
+.liucheng_box .list_box{
+    width:180px;
+    height:200px;
+    margin-bottom:10px;
+}
+.liucheng_box .list_box .img_box{
+    width:180px;
+    height:130px;
+}
+
+
+.pro_box .list_box{
+    width:160px;
+}
+.pro_box .list_box .img_box{
+    width:160px;
+    height:170px;
+    line-height:170px;
+}
+.pro_box .list_box .text_box i{
+    font-size:14px;
+}
+
+
+
+
+
+}
+
+
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width: 370px){
+
+
+
+.case_box .list_box{
+    width:150px;
+}
+.case_box .list_box .img_box{
+    width:150px;
+    height:80px;
+}
+.case_box .list_box p{
+    height:40px;
+    line-height:40px;
+    font-size:13px;
+}
+
+
+
+.liucheng_box .list_box{
+    width:150px;
+    height:200px;
+    margin-bottom:10px;
+}
+.liucheng_box .list_box .img_box{
+    width:150px;
+    height:120px;
+}
+
+
+
+.pro_box .list_box{
+    width:130px;
+}
+.pro_box .list_box .img_box{
+    width:130px;
+    height:140px;
+    line-height:140px;
+}
+.pro_box .list_box .text_box i{
+    font-size:14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}*/
+
+
+
+
+
+
+
+/*小于767统一样式*/
+/*@media (max-width: 767px){
+
+.header_box{height:60px;padding:0 10px;}
+.header_box h1{height:60px;line-height:60px;}
+.header_box h1 img{max-height:38px;}
+.header_box .search_btn{width:70px;position:static;text-indent:35px;float:right;margin-top:18px;margin-right:5px;background:url(../images/search_btn.png) no-repeat 10px center;}
+.banner .pagination{bottom:5px;}
+.footer_box{padding:35px 0;}
+.footer_contact{width:260px; float:none;display:block;margin:0 auto;}
+.footer_contact .text_box{font-size:23px;}
+.footer_contact .text_box h3{font-size:18px;}
+
+
+.htit1{
+    padding:40px 0;
+}
+.htit1 h2{
+    font-size:26px;
+}
+.htit2{
+    padding:45px 15px;
+}
+.htit2 h3{
+    font-size:26px;
+}
+.index_pro_box .list_box p{
+    height:40px;
+    line-height:40px;
+}
+.index_pro a.more{
+    width:150px;
+    height:40px;
+    line-height:40px;
+}
+
+
+
+
+.index_pro2{
+    padding-bottom:40px;
+}
+.index_pro_slide{
+    background:none;
+}
+.index_pro_slide .bd{
+    width:100%;
+    height:auto;
+}
+.index_pro_slide .bd ul li{
+    width:100%;
+    height:auto;
+}
+.index_pro_slide .hd ul{
+    width:100%;
+}
+.index_pro_slide .hd ul li{
+    width:20%;
+    height:80px;
+    font-size:13px;
+    background-image:none;
+}
+.index_pro_slide .hd ul li p{
+    line-height:23px;
+    padding:15px 5px 0 5px;
+}
+.index_pro_slide .hd ul li:hover,
+.index_pro_slide .hd ul li.on{
+    background-image:none;
+}
+
+
+
+
+.index_about{
+    padding-bottom:40px;
+}
+.index_about .htit{
+    padding:60px 0 30px 0;
+}
+.index_about .htit h2{
+    font-size:26px;
+}
+.index_about .htit p{
+    font-size:12px;
+}
+.index_about_box .box1{
+    margin-bottom:8px;
+}
+
+
+
+
+.index_about2 .htit{
+    background-size:auto 45px;
+}
+.index_about2 .htit h2{
+    font-size:26px;
+}
+.index_about2_box a.more{
+    width:180px;
+    height:40px;
+    line-height:40px;
+}
+
+
+
+
+
+.index_news{
+    padding-bottom:60px;
+}
+.index_news_box{
+    padding-bottom:50px;
+}
+.index_news_box .list_box{
+    width:100%;
+    height:auto;
+    float:none;
+}
+.index_news_box .list_box .pic_box{
+    width:100%;
+    height:235px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+.index_news_box .list_box .text_box{
+    height:auto;
+    padding:15px;
+}
+.index_news_box .list_box .text_box h3{
+    font-size:16px;
+}
+.index_news_box .list_box .text_box i{
+    margin-top:20px;
+}
+.index_news_box .list_box:nth-child(2) .pic_box{
+    position:static;
+}
+.index_news_box .list_box:nth-child(2) .text_box{
+    position:static;
+}
+.index_news a.more{
+    width:180px;
+    height:40px;
+    line-height:40px;
+}
+
+
+
+
+.agroup{
+    text-align:center;
+}
+.agroup h2{
+    display:none;
+}
+.agroup ul{
+    float:none;
+}
+
+
+
+.about1_box .text_box{
+    width:90%;
+    padding:0 5%;
+    float:none;
+}
+.about1_box .text_box .htit h3{
+    font-size:26px;
+}
+.about1_box .pic_box{
+    width:90%;
+    padding:0 5%;
+    float:none;
+}
+
+
+.about2{
+    height:210px;
+}
+.about2 p{
+    padding:0 15px;
+    padding-top:110px;
+}
+
+
+
+.about3_box .text_box{
+    width:100%;
+    float:none;
+    padding-top:0;
+    margin-bottom:20px;
+}
+.about3_box .text_box .text{
+    font-size:14px;
+    color:#1f150e;
+    line-height:26px;
+    max-width:460px;
+    margin:0 auto;
+    padding:0 15px;
+}
+.about3_box .pic_box{
+    width:90%;
+    padding:0 5%;
+    float:none;
+}
+
+
+
+
+.contact_box{
+    text-align:center;
+}
+.contact_box .text_box{
+    width:90%;
+    padding:0 5%;
+    float:none;
+    margin-bottom:20px;
+    text-align:left;
+}
+.contact_box .text_box h3{
+    font-size:30px;
+}
+.contact_box .text_box p{
+    font-size:16px;
+    line-height:30px;
+}
+.contact_box .pic_box{
+    width:90%;
+    padding:0 5%;
+    float:none;
+}
+
+
+.map{
+    height:300px;
+}
+
+
+.net .form_box{
+    width:100%;
+    margin:0 auto;
+    margin-bottom:30px;
+}
+.net .form_box select,
+.net .form_box input.text,
+.net .form_box input.submit3{
+    width:100%;
+    margin-right:0;
+    float:none;
+    margin-bottom:20px;
+}
+.net .job_box .job_h span,.job_list .hd span{
+    width:33.33%;
+}
+.net_box .net_sidebar{
+    width:100%;
+    float:none;
+}
+
+
+.news_box{
+    padding:0 10px;
+}
+.news_box .list_box .text_box h4{
+    height:35px;
+    line-height:35px;
+    margin-bottom:0;
+    font-size:16px;
+}
+.news_box .list_box .text_box p{
+    line-height:22px;
+    font-size:13px;
+}
+.news_box .list_box .text_box i{
+    margin:10px 0;
+}
+.news_box .list_box .text_box a.more{
+    width:120px;
+    height:30px;
+    line-height:30px;
+    font-size:12px;
+}
+
+
+
+
+.htit3{
+    padding:40px 0 20px 0;
+    background-size:auto 15px;
+}
+.htit3 h3{
+    font-size:25px;
+    padding-top:15px;
+}
+.liucheng .htit3{
+    background-size:auto 15px;
+}
+
+
+
+.join_odds_box .list_box{
+    margin-bottom:20px;
+}
+.join_odds_box .list_box .text_box{
+    margin-bottom:20px;
+}
+.join_odds_box .list_box .text{
+    width:100%;
+    line-height:28px;
+}
+.join_odds_box .list_box .text h4{
+    font-size:16px;
+}
+.join_odds_box .list_box .pic_box{
+    width:90%;
+    padding:0 5%;
+    float:none;
+}
+.join_odds_box .list_box .text_box{
+    width:90%;
+    padding:0 5%;
+    float:none;
+}
+.join_odds_box .box1 .pic_box{
+    float:none;
+}
+.join_odds_box .box1 .text_box{
+    float:none;
+}
+
+
+
+
+.htit4 h3{
+    font-size:24px;
+}
+.htit4 p{
+    font-size:32px;
+}
+
+
+
+.pro_slide{
+    padding:0 10px;
+}
+.pro_slide .swiper-slide{
+    width:200px;
+}
+.pro_slide .swiper-slide .list_box .img_box{
+    width:180px;
+    height:190px;
+    line-height:190px;
+}
+
+
+.pro_type .t1 ul li{
+    margin-bottom:5px;
+}
+.pro_type .t2{
+    background:none;
+}
+.pro_type .t2 ul li{
+    margin-bottom:10px;
+}
+
+
+
+.prov_slide .br{
+    width:100%;
+    float:none;
+}
+.prov_slide .text_box{
+    padding:0 10px;
+}
+.prov_slide .text_box h3{
+    font-size:18px;
+}
+.prov_slide .text_box h3 a.back{
+    width:80px;
+    font-size:13px;
+    background:#f2f2f2 url(../images/back_bg.png) no-repeat 8px center;
+    background-size:auto 16px;
+    text-indent:38px;
+    margin-top:0;
+}
+.prov_slide .text_info .htit{
+    font-size:14px;
+}
+
+
+.provo_slide{
+    padding:50px 10px;
+}
+.provo_slide .swiper-slide{
+    width:200px;
+}
+.provo_slide .swiper-slide .list_box .img_box{
+    width:200px;
+    height:200px;
+    line-height:200px;
+}
+
+
+
+
+
+.messages_box .htit h3{
+    font-size:23px;
+}
+.messages_box .form_box{
+     padding:10px 15px 50px 15px;
+}
+.messages_box .form_box label{
+    width:100%;
+    float:none;
+    margin-right:0;
+}
+
+
+
+
+
+}*/

@@ -1,0 +1,6034 @@
+@charset "utf-8";
+/* CSS Document */
+/* reset */
+body,h1,h2,h3,h4,h5,p,dl,dd,ul,ol,form,input,textarea,th,td,select,figure,figcaption{margin:0;padding:0;}
+em,i{font-style:normal;}
+li {list-style:none;}
+a {text-decoration:none;color:inherit;}
+a:hover{text-decoration:none;color:inherit;}
+a:focus{text-decoration: none;outline: none;}
+img {border:none;vertical-align:middle;}
+table{border-collapse:collapse;}
+input,textarea{outline:none;background:#fff;border:none;}
+textarea{resize:none;overflow:auto;}
+body{font-size:12px;font-family:"微软雅黑";overflow-x:hidden;color:#333;}
+/* end reset */
+
+/* public */
+.bl{float:left;display:inline-block;}
+.br{float:right;display:inline-block;}
+.clearfix{*zoom: 1;}
+.clearfix:before,.clearfix:after{content:'';display: block;height:0;clear: both;visibility:hidden;}
+.img_box{display:table-cell;vertical-align:middle;text-align:center;}
+.img_box img{vertical-align:middle;border:none;display:inline-block;max-width:100%;max-height:100%;}
+.pic_box img{border:none;display:inline-block;max-width:100%;max-height:100%;}
+h1,h2,h3,h4,h5{font-weight:normal;}
+.fixed{position:fixed;left:0;top:0;z-index:999;}
+
+
+ 
+.sidebar-wrapper { 
+    position: relative; 
+    height: 100%; 
+    overflow: auto;
+    display:none;
+    font-size:20px;
+}
+#dowebok {
+    background-color:rgba(0,0,0,.85);
+}
+#dowebok .nav { 
+    margin-top: 30px; 
+    line-height: 60px; 
+    list-style-type: none;
+}
+#dowebok .nav a { 
+    display: block;
+    padding:0 20px; 
+    color: #fff; 
+    text-decoration: none;
+}
+#dowebok .nav a:hover {
+    background-color: #000;
+}
+[data-simplersidebar='active']{
+    box-shadow:3px 0px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+/*.banner*/
+.banner{
+    position:relative;
+}
+.banner img{
+    width:100%;
+}
+.banner .pagination{
+    position:absolute;
+    left:0;
+    bottom:20px; 
+    margin:auto;
+    padding:0;
+    text-align:center;
+    width: 100%;
+    z-index:30;
+}
+.banner .swiper-pagination-bullet{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    background:#530a49;
+    border:1px solid #530a49;
+    margin:0 10px;
+    cursor:pointer;
+    opacity:1;
+    border-radius:5px;
+    -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+.banner .swiper-pagination-bullet-active{
+    background:#530a49;
+    width:50px;
+    height:10px;
+    border:1px solid #530a49;
+}
+/*.banner .banner_btn span.banner_prev,
+.banner .banner_btn span.banner_next{cursor:pointer;position:absolute;display:inline-block;width:45px;height:45px;top:45%;z-index: 8}
+.banner .banner_btn span.banner_prev{left:5%; background:#171108 url(../images/b_prev.png) no-repeat center center;}
+.banner .banner_btn span.banner_next{right:5%; background:#171108 url(../images/b_next.png) no-repeat center center;}
+.banner .banner_btn span.banner_prev:hover{background:#090a09 url(../images/b_prev.png) no-repeat center center;}
+.banner .banner_btn span.banner_next:hover{background:#090a09 url(../images/b_next.png) no-repeat center center;}*/
+
+
+
+
+
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+}
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+.banner .pagination{
+    bottom:20px; 
+}
+.banner .swiper-pagination-bullet{
+    width:7px;
+    height:7px;
+    margin:0 10px;
+}
+.banner .swiper-pagination-bullet-active{
+    width:40px;
+    height:7px;
+}
+
+
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.banner .pagination{
+    bottom:10px; 
+}
+.banner .swiper-pagination-bullet{
+    width:5px;
+    height:5px;
+    margin:0 10px;
+}
+.banner .swiper-pagination-bullet-active{
+    width:25px;
+    height:5px;
+}
+
+
+
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.banner .pagination{
+    bottom:10px; 
+}
+.banner .swiper-pagination-bullet{
+    width:5px;
+    height:5px;
+    margin:0 10px;
+}
+.banner .swiper-pagination-bullet-active{
+    width:25px;
+    height:5px;
+}
+
+
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.banner .pagination{
+    bottom:10px; 
+}
+.banner .swiper-pagination-bullet{
+    width:5px;
+    height:5px;
+    margin:0 10px;
+}
+.banner .swiper-pagination-bullet-active{
+    width:25px;
+    height:5px;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.banner2{
+    width:100%;
+    max-width:1920px;
+}
+.banner2 img{
+    width:100%;
+}
+/*.btn{
+    font-size:30px;
+    font-family: '宋体';
+    cursor:pointer;
+    display:inline-block;
+    text-align:center;
+}
+*/
+
+
+
+/*.header_box*/
+.header{
+    background:#fff;
+}
+.header_box{
+    position:relative; 
+    height:85px;
+}
+.header_box .logo{
+    height:85px; 
+    display:inline-block; 
+    line-height:85px; 
+    float:left;
+}
+.header_box .logo a{
+    display: block;
+}
+.header_box .menu{
+    width:50px; 
+    height:80px; 
+    float:right; 
+    display:inline-block; 
+    background:url(../images/menu.png) no-repeat center;
+    background-size:30px auto; 
+    cursor:pointer;
+}
+.header_box .search_btn{
+    width:60px; 
+    height:85px; 
+    display:inline-block; 
+    float:right;
+    background:url(../images/search_btn.png) no-repeat center center; 
+    cursor:pointer;
+}
+.header_box .search_form{
+    position:absolute; 
+    right:0; 
+    bottom:-52px; 
+    z-index: 200; 
+    width:260px; 
+    height:50px; 
+    background:rgba(255,255,255,.8); 
+    border:1px solid #eee; 
+    padding:0 10px; 
+    display:none;
+}
+.header_box .search_form form{
+    width:260px; 
+    position:absolute; 
+    margin-top:8px;
+}
+.header_box .search_form input.text{
+    width:260px; 
+    height:35px; 
+    text-indent:10px; 
+    background:#fff; 
+    font-size:15px; 
+    color:#595959;
+}
+.header_box .search_form input.submit{
+    width:35px; 
+    height:35px; 
+    position:absolute; 
+    right:0; 
+    top:0; 
+    display:inline-block; 
+    background:#333 url(../images/search_btn2.png) no-repeat center center; 
+    cursor:pointer;
+}
+
+
+
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+.header_box .logo img{
+    max-height:60px;
+    padding-left:10px;
+}
+
+
+
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+.header_box .logo img{
+    max-height:60px;
+    padding-left:10px;
+}
+
+
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.header_box .menu{
+    width:50px; 
+    height:60px; 
+}     
+.header_box{height:60px;padding:0 10px;}
+.header_box .logo{
+    height:60px;
+    line-height:60px;
+}
+.header_box .logo img{
+    max-height:50px;
+}
+.header_box .search_btn{
+    width:50px; 
+    height:60px;
+    background:url(../images/search_btn3.png) no-repeat center center; 
+    background-size:35px auto; 
+}
+
+
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.header_box .menu{
+    width:50px; 
+    height:60px; 
+}     
+.header_box{height:60px;padding:0 10px;}
+.header_box .logo{
+    height:60px;
+    line-height:60px;
+}
+.header_box .logo img{
+    max-height:50px;
+}
+.header_box .search_btn{
+    width:50px; 
+    height:60px; 
+    background:url(../images/search_btn3.png) no-repeat center center; 
+    background-size:35px auto; 
+}
+
+
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.header_box .menu{
+    width:50px; 
+    height:60px; 
+}    
+.header_box{height:60px;padding:0 10px;}
+.header_box .logo{
+    height:60px;
+    line-height:60px;
+}
+.header_box .logo img{
+    max-height:50px;
+}
+.header_box .search_btn{
+    width:50px; 
+    height:60px; 
+    display:inline-block; 
+    float:right;
+    background:url(../images/search_btn3.png) no-repeat center center; 
+    background-size:35px auto; 
+    cursor:pointer;
+}
+
+
+
+}
+
+
+
+
+/*.type_btn*/
+.type_btn{
+    max-width:1300px;
+    margin:20px auto;
+    text-align:center;
+}
+.type_btn>ul{
+    width:50%;
+    display: inline-block;
+    text-align:center;
+}
+.type_btn>ul>li{
+    line-height:55px;
+    color:#4d4d4d;
+    font-size:24px;
+    text-align:center;
+    background:#d9d9d9 url(../images/angle1.png) no-repeat 96% center;
+    background-size:30px 20px; 
+    display: block;
+    position: relative;
+}
+.type_btn>ul>li>a.hd{
+    color:#4d4d4d;
+    background:#d9d9d9 url(../images/angle1.png) no-repeat 96% center ;
+    background-size:30px 20px;
+}
+.type_btn>ul>li:nth-child(2n){
+    margin:0;
+}
+.type_btn>ul>li:hover{
+    color:#333;
+}
+.type_btn>ul>li>ul{
+    display:none;
+    position:absolute;
+    left:0;
+    top:55px;
+    width:100%;
+    z-index: 50;
+}
+.type_btn>ul>li>ul>li{
+    line-height:55px;
+    font-size:22px;
+    color:#666;
+    background:#fff;
+    border-top:1px solid #ddd;
+}
+.type_btn>ul>li>ul>li.on,
+.type_btn>ul>li>ul>li:hover{
+    color:#530a49;
+    background:#fff;
+}
+.type_btn>ul>li>ul>li>a:last-child{
+    border-bottom:1px solid #ddd;
+}
+.type_btn ul li a{
+    display:block;
+}
+
+.prov_more {
+    line-height:40px;
+    color:#4d4d4d;
+    font-size:20px;
+    text-align:center;
+    background:#d9d9d9 url(../images/angle1.png) no-repeat 96% center;
+    background-size:20px 10px; 
+    display: block;
+    margin-top:20px;
+}
+.prov_more a{
+    display: inline-block;
+}
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+.type_btn>ul{
+    width:98%;
+    display: inline-block;
+    text-align:center;
+}
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.type_btn>ul{
+    width:98%;
+    display: inline-block;
+    text-align:center;
+}
+.type_btn>ul>li{
+    line-height:40px;
+    font-size:18px;
+    background:#d9d9d9 url(../images/angle1.png) no-repeat 50% center;
+    background-size:20px 14px;
+}
+.type_btn>ul>li>a.hd{
+    color:#4d4d4d;
+    background:#d9d9d9 url(../images/angle1.png) no-repeat 96% center ;
+    background-size:20px 14px;
+}
+.type_btn>ul>li>ul{
+    top:40px;
+}
+.type_btn>ul>li>ul>li{
+    line-height:40px;
+    font-size:15px;
+}
+
+
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.type_btn>ul{
+    width:98%;
+    display: inline-block;
+    text-align:center;
+}
+.type_btn>ul>li{
+    line-height:40px;
+    font-size:18px;
+    background:#d9d9d9 url(../images/angle1.png) no-repeat 50% center;
+    background-size:20px 14px;
+}
+.type_btn>ul>li>a.hd{
+    color:#4d4d4d;
+    background:#d9d9d9 url(../images/angle1.png) no-repeat 96% center ;
+    background-size:20px 14px;
+}
+.type_btn>ul>li>ul{
+    top:40px;
+}
+.type_btn>ul>li>ul>li{
+    line-height:40px;
+    font-size:15px;
+}
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.type_btn>ul{
+    width:98%;
+    display: inline-block;
+    text-align:center;
+}
+.type_btn>ul>li{
+    line-height:40px;
+    font-size:18px;
+    background:#d9d9d9 url(../images/angle1.png) no-repeat 50% center;
+    background-size:20px 14px;
+}
+.type_btn>ul>li>a.hd{
+    color:#4d4d4d;
+    background:#d9d9d9 url(../images/angle1.png) no-repeat 96% center ;
+    background-size:20px 14px;
+}
+.type_btn>ul>li>ul{
+    top:40px;
+}
+.type_btn>ul>li>ul>li{
+    line-height:40px;
+    font-size:15px;
+}
+
+
+
+}
+
+
+
+
+
+/*.nav_main*/
+.nav_main{
+    height:80px;
+    text-align:center;
+    float:right;
+}
+.nav_main ul li{
+    height:80px; 
+    line-height:100px; 
+    text-align:center;
+    padding:0 28px;
+    display:inline-block; 
+    float:left; 
+    font-size:16px; 
+    color:#595959;
+    font-weight:bold;
+    border:1px solid #fff;
+}
+.nav_main ul li:hover,
+.nav_main ul li.on{
+    color:#530a49;
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    border-bottom:2px solid #530a49;
+}
+.nav_main ul li a{display:block;}
+
+
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+.nav_main ul li{
+    font-size:15px; 
+    padding:0 15px;
+}
+
+
+
+}
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+.nav_main ul li{
+    line-height:90px;
+    padding:0 5px;
+    font-size:14px; 
+}
+
+
+
+}
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+}
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+}
+
+
+
+.nav_public{
+    border-top:1px solid #ddd;
+    margin-bottom:20px;
+}
+.nav_public .main{
+    max-width:1300px;
+}
+.nav_public .nav1 a{
+    color:#4d4d4d;
+    font-size:15px;
+    line-height:40px;
+    padding-right:10px;
+    background: url(../images/nbg.png)no-repeat center right;
+    background-size:7px 7px; 
+}
+.nav_public .nav1 a:first-child{
+    padding-left:15px;
+}
+.nav_public .nav1 a:last-child{
+    padding-right:0;
+    background: none;
+}
+.nav_public .nav1 a.on,
+.nav_public .nav1 a:hover{
+    color:#530a49;
+}
+.nav_public .nav2{
+    text-align:right;
+}
+.nav_public .nav2 a{
+    color:#4d4d4d;
+    font-size:15px;
+    line-height:40px;
+    display: inline-block;
+    padding:0 20px;
+}
+.nav_public .nav2 a.on,
+.nav_public .nav2 a:hover{
+    color:#530a49;
+}
+
+
+.nav_public .nav3{
+    text-align:right;
+}
+.nav_public .nav3 ul{
+    display: inline-block;
+    text-align:left;
+}
+.nav_public .nav3 ul li{
+    color:#4d4d4d;
+    font-size:15px;
+    line-height:40px;
+    display: inline-block;
+    padding:0 10px;
+}
+.nav_public .nav3 ul li a{
+    display: inline-block;
+}
+.nav_public .nav3 ul li.on,
+.nav_public .nav3 ul li:hover{
+    color:#530a49;
+}
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.nav_public{
+    border-bottom:1px solid #ddd;
+}
+.nav_public .nav2{
+    text-align:center;
+}
+.nav_public .nav2 a{
+    color:#4d4d4d;
+    font-size:15px;
+    line-height:40px;
+    padding:0 10px;
+    display: inline-block;
+}
+.nav_public .nav2 a.on,
+.nav_public .nav2 a:hover{
+    color:#530a49;
+}
+
+
+
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+    
+.nav_public{
+    border-bottom:1px solid #ddd;
+}
+.nav_public .nav2{
+    text-align:center;
+}
+.nav_public .nav2 a{
+    color:#4d4d4d;
+    font-size:15px;
+    line-height:40px;
+    padding:0 10px;
+    display: inline-block;
+}
+.nav_public .nav2 a.on,
+.nav_public .nav2 a:hover{
+    color:#530a49;
+}
+
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.nav_public{
+    border-bottom:1px solid #ddd;
+}
+.nav_public .nav2{
+    text-align:center;
+}
+.nav_public .nav2 a{
+    color:#4d4d4d;
+    font-size:15px;
+    line-height:40px;
+    padding:0 10px;
+    display: inline-block;
+}
+.nav_public .nav2 a.on,
+.nav_public .nav2 a:hover{
+    color:#530a49;
+}
+
+
+
+}
+
+
+
+
+/*.index_key*/
+.index_key{
+    padding:10px 0;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+}
+.index_key .main{
+    max-width:1300px;
+}
+.index_key .text{
+    color:#444;
+    font-size:18px;
+    line-height:28px;
+}
+.index_key .text a{
+    padding-right:10px;
+}
+.index_key .text a:hover,
+.index_key .text a.on{
+    color:#530a49;
+}
+
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+.index_key .text{
+    width:96%;
+    margin:0 auto;
+}    
+
+
+    
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+.index_key .text{
+    width:96%;
+    margin:0 auto;
+}
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+.index_key .text{
+    width:96%;
+    margin:0 auto;
+}
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.index_key .text{
+    width:96%;
+    margin:0 auto;
+}
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.index_key .text{
+    width:96%;
+    margin:0 auto;
+}
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.index_key .text{
+    width:96%;
+    margin:0 auto;
+}
+
+}
+
+
+
+
+
+.pages{
+    text-align:center;
+}
+.pages a{
+    display: inline-block;
+    color:#1b1b1b;
+    font-size:18px;
+    padding:0 18px;
+    margin:0 5px;
+    line-height:45px;
+    background:#f1f1f1;
+    border-radius: 3px;
+}
+.pages a.on,
+.pages a:hover{
+    color:#fff;
+    background: #530a49;
+}
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.pages a{
+    display: inline-block;
+    color:#1b1b1b;
+    font-size:14px;
+    padding:0 14px;
+    margin:0 5px;
+    line-height:40px;
+    background:#f1f1f1;
+    border-radius: 3px;
+}
+
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.pages a{
+    display: inline-block;
+    color:#1b1b1b;
+    font-size:13px;
+    padding:0 13px;
+    margin:0 5px;
+    line-height:35px;
+    background:#f1f1f1;
+    border-radius: 3px;
+}
+
+
+}
+
+
+
+
+/*.htit */
+.htit h2{
+    color:#2f2f2f;
+    font-size:30px;
+    line-height:40px;
+}
+.htit p{
+    font-family: 'Arial';
+    text-transform: uppercase;
+    font-size:15px;
+    color:#818181;
+    line-height:25px;
+}
+
+/*.htit2 */
+.htit2 h2{
+    color:#4d4d4d;
+    font-size:24px;
+    line-height:35px;
+}
+.htit2 p{
+    font-family: 'Arial';
+    text-transform: uppercase;
+    color:#5c2260;
+    font-size:24px;
+    line-height:35px;
+    padding-bottom:10px;
+}
+
+/*.htit3 */
+.htit3{
+    text-align:center;
+}
+.htit3 h2{
+    color:#000;
+    font-size:24px;
+    line-height:35px;
+}
+.htit3 p{
+    font-family: 'Arial';
+    text-transform: uppercase;
+    color:#000;
+    font-size:24px;
+    line-height:35px;
+}
+
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+.htit h2{
+    font-size:27px;
+}
+
+
+
+
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.htit h2{
+    font-size:24px;
+}
+
+.htit2 h2{
+    font-size:18px;
+    line-height:28px;
+}
+.htit2 p{
+    font-size:18px;
+    line-height:26px;
+    padding-bottom:0;
+}
+
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.htit h2{
+    font-size:20px;
+}
+
+.htit2 h2{
+    font-size:18px;
+    line-height:28px;
+}
+.htit2 p{
+    font-size:18px;
+    line-height:26px;
+    padding-bottom:0;
+}
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.htit h2{
+    font-size:18px;
+}
+
+.htit2 h2{
+    font-size:18px;
+    line-height:28px;
+}
+.htit2 p{
+    font-size:18px;
+    line-height:26px;
+    padding-bottom:0;
+}
+
+
+
+
+}
+
+
+
+
+
+/*index_about*/
+.index_about{
+    position: relative;
+    margin-top:50px;
+    padding-bottom:20px;
+    margin-bottom:30px;
+}
+.index_about .pic{
+    width:70%;
+    float:left;
+}
+.index_about .list_box{
+    width:48%;
+    background: #fff;
+    position: absolute;
+    right:0;
+    bottom:0;
+    z-index: 11;
+}
+.index_about .list_box .text_box{
+    padding:65px 40px;
+    box-shadow:0px 0px 20px #888;
+}
+.index_about .list_box .text_box .htit h2{
+    padding-bottom:15px;
+}
+.index_about .list_box .text_box .htit p{
+    padding-bottom:20px;
+}
+.index_about .list_box .text_box .text{
+    color:#5d5d5d;
+    font-size:15px;
+    line-height:26px;
+}
+.index_about .list_box .text_box .more{
+    width:160px;
+    height:45px;
+    line-height:45px;
+    border:1px solid #ddd;
+    color:#5d5d5d;
+    font-size:14px;
+    text-align:center;
+    margin-top:60px;
+}
+.index_about .list_box .text_box .more a{
+    display: block;
+}
+.index_about .list_box .text_box .more:hover{
+    color:#530a49;
+    border:1px solid #530a49;
+}
+
+
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+
+
+.index_about{
+    padding-bottom:0;
+    margin-bottom:0;
+}
+.index_about .pic{
+    width:100%;
+    display: block;
+    float:none;
+}
+.index_about .pic img{
+    width:100%;
+    float:none;
+}
+.index_about .list_box{
+    width:100%;
+    display: block;
+    position: static;
+    bottom:none;
+    right:none;
+    background: rgba(255,255,255,.9);
+}
+
+.index_about .list_box .text_box{
+    margin:40px;
+}
+
+
+
+
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+
+.index_about{
+    padding-bottom:0;
+    margin-bottom:0;
+}
+.index_about .pic{
+    width:100%;
+    display: block;
+    float:none;
+}
+.index_about .pic img{
+    width:100%;
+    float:none;
+}
+.index_about .list_box{
+    width:100%;
+    display: block;
+    position: static;
+    bottom:none;
+    right:none;
+    background: rgba(255,255,255,.9);
+}
+
+.index_about .list_box .text_box{
+    margin:40px;
+}
+
+
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+    
+
+.index_about{
+    padding-bottom:0;
+    margin-bottom:0;
+}
+.index_about .pic{
+    width:100%;
+    display: block;
+    float:none;
+}
+.index_about .pic img{
+    width:100%;
+    float:none;
+}
+.index_about .list_box{
+    width:100%;
+    display: block;
+    position: static;
+    bottom:none;
+    right:none;
+    background: rgba(255,255,255,.9);
+}
+.index_about .list_box .text_box{
+    margin:40px;
+}
+
+
+
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+
+.index_about{
+    padding-bottom:0;
+    margin-bottom:0;
+}
+.index_about .pic{
+    width:100%;
+    display: block;
+    float:none;
+}
+.index_about .pic img{
+    width:100%;
+    float:none;
+}
+.index_about .list_box{
+    width:100%;
+    display: block;
+    position: static;
+    bottom:none;
+    right:none;
+    background: rgba(255,255,255,.9);
+}
+.index_about .list_box .text_box{
+    margin:20px;
+    padding:30px;
+}
+.index_about .list_box .text_box .more{
+    margin-top:40px;
+}
+
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+
+.index_about{
+    padding-bottom:0;
+    margin-bottom:0;
+}
+.index_about .pic{
+    width:100%;
+    display: block;
+    float:none;
+}
+.index_about .pic img{
+    width:100%;
+    float:none;
+}
+.index_about .list_box{
+    width:100%;
+    display: block;
+    position: static;
+    bottom:none;
+    right:none;
+    background: rgba(255,255,255,.9);
+}
+.index_about .list_box .text_box{
+    margin:20px;
+    padding:30px;
+}
+.index_about .list_box .text_box .more{
+    margin-top:40px;
+}
+
+
+
+
+
+}
+
+
+
+/*.index_pro*/
+.index_pro{
+    margin:50px 0;
+}
+.index_pro .htit2{
+    padding-bottom:30px;
+    text-align:center;
+}
+.index_pro .main{
+    width:1300px;
+}
+.index_pro_swiper{
+    overflow: hidden;
+    margin:0 auto;
+    position: relative;
+}
+.index_pro_swiper .sprev,
+.index_pro_swiper .snext{
+    width:45px;
+    height:45px;
+    border:1px solid #fff;
+    position: absolute;
+    bottom:10px;
+    z-index: 20;
+    cursor: pointer;
+}
+.index_pro_swiper .sprev{
+    right:20%;
+    background: url(../images/r_bg.png)no-repeat center center;
+    background-size:14px 25px; 
+}
+.index_pro_swiper .snext{
+    right:30%;
+    background: url(../images/l_bg.png)no-repeat center center;
+    background-size:14px 25px; 
+}
+.index_pro_swiper .swiper-slide{
+    width:100%;
+}
+.index_pro_swiper .swiper-slide .list{
+    width:100%;
+    position: relative;
+}
+.index_pro_swiper .swiper-slide .list a{
+    display: block;
+}
+.index_pro_swiper .swiper-slide .list .img_box{
+    width:100%;
+}
+.index_pro_swiper .swiper-slide .list .text_box{
+    height:75px;
+    background: rgba(0,0,0,.7);
+    position: absolute;
+    right:0;
+    left:0;
+    bottom:0;
+    z-index: 11;
+}
+.index_pro_swiper .swiper-slide .list .text_box .text{
+    float:left;
+    display: inline-block;
+    padding:0 80px 0 40px;
+    color:#fff;
+    font-size:26px;
+    line-height:75px;
+    background: url(../images/ipro_bg.png)no-repeat right center;
+    background-size:48px 32px;
+    max-width:50%; 
+}
+.index_pro_swiper .swiper-slide .list .text_box .more2{
+    float:left;
+    display:block;
+    width:130px;
+    height:32px;
+    line-height:32px;
+    color:#fff;
+    font-size:16px;
+    text-align:center;
+    border:1px solid #fff;
+    margin:21px auto 21px 25px;
+    max-width:20%; 
+}
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+    
+.index_pro .main{
+    width:100%;
+    max-width:1300px;
+}
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+.index_pro .main{
+    width:100%;
+    max-width:1300px;
+}
+
+
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+.index_pro .main{
+    width:100%;
+    max-width:1300px;
+}
+
+.index_pro_swiper .sprev,
+.index_pro_swiper .snext{
+    width:40px;
+    height:80px;
+    border:none;
+    cursor: pointer;
+    position: absolute;
+    bottom:calc(50% - 40px);
+}
+.index_pro_swiper .sprev{
+    right:10px;
+    background: rgba(0,0,0,.5) url(../images/r_bg.png)no-repeat center center;
+    background-size:20px 35px; 
+}
+.index_pro_swiper .snext{
+    left:10px;
+    background: rgba(0,0,0,.5) url(../images/l_bg.png)no-repeat center center;
+    background-size:20px 35px; 
+}
+.index_pro_swiper .swiper-slide .list .text_box{
+    height:55px;
+    background: rgba(0,0,0,.9);
+    position: static;
+    right:none;
+    left:none;
+    bottom:none;
+}
+.index_pro_swiper .swiper-slide .list .text_box .text{
+    float:left;
+    font-size:18px;
+    line-height:55px;
+    padding:0 60px 0 40px;
+    background-size:28px 18px; 
+}
+.index_pro_swiper .swiper-slide .list .text_box .more2{
+    float:right;
+    width:110px;
+    height:32px;
+    line-height:32px;
+    font-size:16px;
+    margin:11px 25px 11px 25px;
+}
+
+
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+ 
+.index_pro .main{
+    width:100%;
+    max-width:1300px;
+}
+.index_pro_swiper{
+    width:94%;
+    margin:auto;
+}
+.index_pro_swiper .sprev,
+.index_pro_swiper .snext{
+    width:40px;
+    height:80px;
+    border:none;
+    cursor: pointer;
+    position: absolute;
+    bottom:calc(50% - 40px);
+}
+.index_pro_swiper .sprev{
+    right:10px;
+    background: rgba(0,0,0,.5) url(../images/r_bg.png)no-repeat center center;
+    background-size:20px 35px; 
+}
+.index_pro_swiper .snext{
+    left:10px;
+    background: rgba(0,0,0,.5) url(../images/l_bg.png)no-repeat center center;
+    background-size:20px 35px; 
+}
+.index_pro_swiper .swiper-slide .list .text_box{
+    height:55px;
+    background: rgba(0,0,0,.9);
+    position: static;
+    right:none;
+    left:none;
+    bottom:none;
+}
+.index_pro_swiper .swiper-slide .list .text_box .text{
+    float:left;
+    font-size:18px;
+    line-height:55px;
+    padding:0 60px 0 40px;
+    background-size:28px 18px; 
+}
+.index_pro_swiper .swiper-slide .list .text_box .more2{
+    float:right;
+    width:110px;
+    height:32px;
+    line-height:32px;
+    font-size:16px;
+    margin:11px 25px 11px 25px;
+}
+
+
+
+
+
+
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.index_pro .main{
+    width:100%;
+    max-width:1300px;
+}
+.index_pro_swiper{
+    width:94%;
+    margin:auto;
+}
+
+.index_pro .main{
+    width:100%;
+    max-width:1300px;
+}
+
+.index_pro_swiper .sprev,
+.index_pro_swiper .snext{
+    width:30px;
+    height:60px;
+    border:none;
+    position: absolute;
+    bottom:50%;
+}
+.index_pro_swiper .sprev{
+    right:10px;
+    background: rgba(0,0,0,.5) url(../images/r_bg.png)no-repeat center center;
+    background-size:15px 25px; 
+}
+.index_pro_swiper .snext{
+    left:10px;
+    background: rgba(0,0,0,.5) url(../images/l_bg.png)no-repeat center center;
+    background-size:15px 25px; 
+}
+.index_pro_swiper .swiper-slide .list .text_box{
+    height:55px;
+    background: rgba(0,0,0,.9);
+    position: static;
+    right:none;
+    left:none;
+    bottom:none;
+}
+.index_pro_swiper .swiper-slide .list .text_box .text{
+    float:left;
+    font-size:18px;
+    line-height:55px;
+    background-size:28px 22px; 
+    padding:0 40px 0 30px;
+}
+.index_pro_swiper .swiper-slide .list .text_box .more2{
+    float:right;
+    width:130px;
+    height:32px;
+    line-height:32px;
+    font-size:14px;
+    margin:11px 11px 11px 0;
+}
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.index_pro .main{
+    width:100%;
+    max-width:1300px;
+}
+.index_pro_swiper{
+    width:94%;
+    margin:auto;
+}
+
+.index_pro_swiper .sprev,
+.index_pro_swiper .snext{
+    width:30px;
+    height:60px;
+    border:none;
+    position: absolute;
+    bottom:50%;
+}
+.index_pro_swiper .sprev{
+    right:10px;
+    background: rgba(0,0,0,.5) url(../images/r_bg.png)no-repeat center center;
+    background-size:15px 25px; 
+}
+.index_pro_swiper .snext{
+    left:10px;
+    background: rgba(0,0,0,.5) url(../images/l_bg.png)no-repeat center center;
+    background-size:15px 25px; 
+}
+.index_pro_swiper .swiper-slide .list .text_box{
+    height:55px;
+    background: rgba(0,0,0,.9);
+    position: static;
+    right:none;
+    left:none;
+    bottom:none;
+}
+.index_pro_swiper .swiper-slide .list .text_box .text{
+    float:left;
+    font-size:18px;
+    line-height:55px;
+    background-size:38px 22px; 
+    padding:0 60px 0 30px;
+}
+.index_pro_swiper .swiper-slide .list .text_box .more2{
+    float:right;
+    width:130px;
+    height:32px;
+    line-height:32px;
+    font-size:14px;
+    margin:11px 11px 11px 0;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+/*index_pro2*/
+.index_pro2 .main{
+    width:100%;
+    max-width:1300px;
+}
+.index_pro2 .htit2{
+    text-align:center;
+    padding-bottom:40px;
+}
+.index_pro2 .list_box{
+    margin:0 auto 40px auto
+}
+.index_pro2 .list_box .list {
+    margin-bottom:30px;
+}
+.index_pro2 .list_box .list ul.ipro_nav li{
+    color:#530a49;
+    font-size:17px;
+    line-height:40px;
+    padding-left:90px;
+}
+.index_pro2 .list_box .list ul.ipro_nav li a{
+    display: block;
+}
+.index_pro2 .list_box .list ul.ipro_nav li.on,
+.index_pro2 .list_box .list ul.ipro_nav li:hover{
+    font-weight: bold;
+    background: url(../images/ipro_bg2.png)no-repeat 70px 13px;
+    background-size:14px 14px; 
+}
+.index_pro2 .list_box .list ul.ipro_nav li:last-child{
+    height:80%;
+    background: none;
+}
+.index_pro2 .list_box .list ul.ipro_nav li:last-child a:hover{
+    padding-left:5px;
+}
+.index_pro2 .list_box .list .ipro2_box{
+    display: inline-block;
+    position:relative;
+    margin:0 0 0 auto;
+}
+.index_pro2 .list_box .list .ipro2_box a{
+    display: block;
+}
+.index_pro2 .list_box .list .ipro2_box .img_box{
+    width:100%;
+}
+.index_pro2 .list_box .list .ipro2_box .text{
+    color:#fff;
+    font-size:16px;
+    line-height:40px;
+    text-align:center;
+    width:100%;
+    position: absolute;
+    left:0;
+    bottom:0;
+    z-index: 12;
+}
+.index_pro2 .list_box .list .ipro2_box .mask{
+    color:#fff;
+    width:100%;
+    height:40px;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    left:0;
+    bottom:0;
+    z-index: 11;
+}
+.index_pro2 .list_box .list .ipro2_box:hover .mask{
+    height:100%;
+}
+.index_pro2 .list_box .list .ipro2_box:hover .text{
+    height:40px;
+    bottom:calc(50% - 20px);
+}
+.index_pro2 .list_box .list .ipro2_box:hover .text p{
+    display: inline-block;
+    padding: 0 10px 10px 10px;
+    border-bottom:2px solid #ddd;
+}
+
+
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+
+
+.index_pro2 .list_box .list .ipro2_box{
+    display: inline-block;
+    position:relative;
+    margin-left:15px;
+}
+.index_pro2 .list_box .list ul.ipro_nav li:last-child{
+    height:80%;
+    background: none;
+}
+
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+
+
+.index_pro2 .list_box .list ul.ipro_nav li{
+    color: #530a49;
+    font-size: 16px;
+    line-height: 32px;
+    padding-left: 60px;
+}
+
+.index_pro2 .list_box .list ul.ipro_nav li.on,
+.index_pro2 .list_box .list ul.ipro_nav li:hover{
+    font-weight: bold;
+    background: url(../images/ipro_bg2.png)no-repeat 40px 12px;
+    background-size:10px 10px; 
+}
+.index_pro2 .list_box .list ul.ipro_nav li:last-child{
+    height:80%;
+    background: none;
+}
+.index_pro2 .list_box .list .ipro2_box{
+    display: inline-block;
+    position:relative;
+    margin-left:15px;
+}
+
+
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+
+.index_pro2 .list_box .list{
+    margin-bottom:30px;
+}
+
+.index_pro2 .list_box .list ul.ipro_nav li{
+    color: #530a49;
+    font-size: 15px;
+    line-height: 25px;
+    padding-left: 60px;
+}
+
+.index_pro2 .list_box .list ul.ipro_nav li.on,
+.index_pro2 .list_box .list ul.ipro_nav li:hover{
+    font-weight: bold;
+    background: url(../images/ipro_bg2.png)no-repeat 40px 12px;
+    background-size:10px 10px; 
+}
+.index_pro2 .list_box .list ul.ipro_nav li:last-child{
+    height:80%;
+    background: none;
+}
+.index_pro2 .list_box .list .ipro2_box{
+    display: inline-block;
+    position:relative;
+    margin:0 8px;
+}
+
+
+
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+    
+
+.index_pro2 .list_box .list{
+    margin-bottom:30px;
+}
+
+.index_pro2 .list_box .list ul.ipro_nav li{
+    color: #530a49;
+    font-size: 16px;
+    line-height: 32px;
+    padding-left: 60px;
+}
+
+.index_pro2 .list_box .list ul.ipro_nav li.on,
+.index_pro2 .list_box .list ul.ipro_nav li:hover{
+    font-weight: bold;
+    background: url(../images/ipro_bg2.png)no-repeat 40px 12px;
+    background-size:10px 10px; 
+}
+.index_pro2 .list_box .list ul.ipro_nav li:last-child{
+    height:80%;
+    background: none;
+}
+.index_pro2 .list_box .list .ipro2_box{
+    display: inline-block;
+    position:relative;
+    margin:0 8px;
+}
+
+
+
+
+    
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+
+.index_pro2 .list_box .list {
+    margin-bottom:30px;
+}
+
+.index_pro2 .list_box .list ul.ipro_nav li{
+    color: #530a49;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 40px;
+}
+
+.index_pro2 .list_box .list ul.ipro_nav li.on,
+.index_pro2 .list_box .list ul.ipro_nav li:hover{
+    font-weight: bold;
+    background: url(../images/ipro_bg2.png)no-repeat 20px 8px;
+    background-size:10px 10px; 
+}
+.index_pro2 .list_box .list ul.ipro_nav li:last-child{
+    height:80%;
+    background: none;
+}
+.index_pro2 .list_box .list .ipro2_box{
+    display: inline-block;
+    position:relative;
+    margin:0 8px;
+}
+
+
+
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+
+
+.index_pro2 .list_box .list {
+    margin-bottom:30px;
+}
+
+.index_pro2 .list_box .list ul.ipro_nav li{
+    color: #530a49;
+    font-size: 12px;
+    line-height: 22px;
+    padding-left: 40px;
+}
+.index_pro2 .list_box .list ul.ipro_nav li a{
+    display: block;
+}
+.index_pro2 .list_box .list ul.ipro_nav li.on,
+.index_pro2 .list_box .list ul.ipro_nav li:hover{
+    font-weight: bold;
+    background: url(../images/ipro_bg2.png)no-repeat 20px 8px;
+    background-size:10px 10px; 
+}
+.index_pro2 .list_box .list ul.ipro_nav li:last-child{
+    height:80%;
+    background: none;
+}
+.index_pro2 .list_box .list .ipro2_box{
+    display: block;
+    position:relative;
+    margin:0 8px;
+}
+.index_pro2 .list_box .list .ipro2_box a{
+    display: block;
+}
+.index_pro2 .list_box .list .ipro2_box .img_box{
+}
+.index_pro2 .list_box .list .ipro2_box .text{
+    color:#fff;
+    font-size:16px;
+    line-height:40px;
+    text-align:center;
+    width:100%;
+    position: absolute;
+    left:0;
+    bottom:0;
+    z-index: 12;
+}
+.index_pro2 .list_box .list .ipro2_box .mask{
+    color:#fff;
+    width:100%;
+    height:40px;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    left:0;
+    bottom:0;
+    z-index: 11;
+}
+.index_pro2 .list_box .list .ipro2_box:hover .mask{
+    height:100%;
+}
+.index_pro2 .list_box .list .ipro2_box:hover .text{
+    height:40px;
+    bottom:calc(50% - 20px);
+}
+.index_pro2 .list_box .list .ipro2_box:hover .text p{
+    display: inline-block;
+    padding: 0 10px 10px 10px;
+    border-bottom:2px solid #ddd;
+}
+
+
+
+
+
+
+}
+
+
+
+
+/*index_case*/
+.index_case{
+    padding:50px 0;
+    background: #e0e3ea url(../images/icase_bg.jpg)no-repeat left center;
+    background-size:auto 100%;
+}
+.index_case .main{
+    max-width:1300px;
+    margin:0 auto;
+}
+.index_case .tit .htit2{
+    padding-left:45px;
+}
+.index_case .tit .htit2 a{
+    display: block;
+    width:50px;
+    height:20px;
+    margin-top:90px;
+}
+.index_case .tit .htit2 a:hover{
+    padding-left:5px;
+}
+.index_case .list .icase_box a{
+    display: block;
+}
+.index_case .list .icase_box .text{
+    line-height:60px;
+    color:#2c2c2c;
+    font-size:18px;
+    height:60px;
+    overflow: hidden;
+}
+.index_case .list .icase_box:hover .text{
+    background: #fff;
+    color:#602958;
+    font-weight:bold;
+}
+.index_case .list .icase_box .text p{
+    padding:0 15px;
+}
+
+
+
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+.index_case .tit .htit2{
+    padding-left:0;
+    text-align:center;
+    margin-bottom:30px;
+}
+.index_case .tit .htit2 a{
+    margin:20px auto 0 auto;
+}
+.index_case .list .icase_box{
+    padding:0 5px;
+}
+.index_case .list .icase_box .text{
+    background: #fff;
+    color:#602958;
+    font-weight:bold;
+}
+
+
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.index_case .tit .htit2{
+    padding-left:0;
+    text-align:center;
+    margin-bottom:30px;
+}
+.index_case .tit .htit2 a{
+    margin:20px auto 0 auto;
+}
+.index_case .list .icase_box{
+    padding:0 5px;
+}
+.index_case .list .icase_box .text{
+    background: #fff;
+    color:#602958;
+    font-weight:bold;
+}
+
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.index_case .tit .htit2{
+    padding-left:0;
+    text-align:center;
+    margin-bottom:30px;
+}
+.index_case .tit .htit2 a{
+    margin:20px auto 0 auto;
+}
+.index_case .list .icase_box{
+    padding:0 5px;
+}
+.index_case .list .icase_box .text{
+    background: #fff;
+    color:#602958;
+    font-size:15px;
+    line-height:40px;
+    height:40px;
+    font-weight:bold;
+}
+
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.index_case .tit .htit2{
+    padding-left:0;
+    text-align:center;
+    margin-bottom:30px;
+}
+.index_case .tit .htit2 a{
+    margin:20px auto 0 auto;
+}
+.index_case .list .icase_box{
+    padding:0 5px;
+}
+.index_case .list .icase_box .text{
+    background: #fff;
+    color:#602958;
+    font-size:15px;
+    line-height:40px;
+    height:40px;
+    font-weight:bold;
+}
+
+
+}
+
+
+
+
+
+/*.index_news*/
+.index_news{
+    padding:40px 0;
+}
+.index_news .main{
+    max-width:1300px;
+}
+.index_news .htit2{
+    text-align:center;
+    padding-bottom:30px;
+}
+.index_news .list{
+    margin-bottom:30px;
+}
+.index_news .list a{
+    display: block;
+}
+.index_news .list .pic img{
+    width:92%;
+}
+.index_news .list .t1 h3{
+    color:#373737;
+    font-size:18px;
+    line-height:26px;
+    padding-bottom:8px;
+    background: url(../images/ibg.png)no-repeat center bottom;
+    background-size:100% 1px;  
+    display: inline-block;
+    white-space: nowrap; 
+    width: 100%; 
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.index_news .list .t1 .text{
+    color:#373737;
+    font-size:15px;
+    line-height:28px;
+    margin:15px 0;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.index_news .list .t1 .day{
+    display:block;
+    font-size:15px;
+    line-height:28px;
+    margin-bottom:20px;
+}
+.index_news .list .t1 .more3{
+    display:inline-block;
+    font-size:15px;
+    padding:5px 15px;
+    border:1px solid #ddd;
+}
+
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+.index_news .list .t1 h3{ 
+    font-size:18px;
+    line-height:30px;
+    padding-bottom:2px;
+}
+.index_news .list .t1 .text{
+    font-size:15px;
+    line-height:28px;
+    margin:15px 0;
+}
+.index_news .list .t1 .day{
+    display:block;
+    font-size:15px;
+    line-height:28px;
+    margin-bottom:20px;
+}
+.index_news .list .t1 .more3{
+    display:inline-block;
+    font-size:15px;
+    padding:5px 15px;
+    border:1px solid #ddd;
+}
+
+
+
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+.index_news .list{
+    margin-bottom:30px;
+}
+.index_news .list .t1 h3{ 
+    font-size:18px;
+    line-height:30px;
+    padding-bottom:2px;
+}
+.index_news .list .t1 .text{
+    font-size:15px;
+    line-height:22px;
+    margin:8px 0;
+}
+.index_news .list .t1 .day{
+    display:block;
+    font-size:15px;
+    line-height:24px;
+    margin-bottom:10px;
+}
+.index_news .list .t1 .more3{
+    display:inline-block;
+    font-size:14px;
+    padding:5px 15px;
+    border:1px solid #ddd;
+}
+
+
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.index_news .list{
+    margin-bottom:25px;
+}
+.index_news .list .t1 h3{ 
+    font-size:18px;
+    line-height:30px;
+    padding-bottom:2px;
+}
+.index_news .list .t1 .text{
+    font-size:15px;
+    line-height:24px;
+    margin:10px 0;
+}
+.index_news .list .t1 .day{
+    display: inline-block;
+    line-height:20px;
+    font-size:15px;
+    margin:0;
+    padding-right:10%;
+}
+.index_news .list .t1 .more3{
+    display: inline-block;
+    padding:3px 15px;
+    font-size:13px;
+    border:1px solid #ddd;
+}
+
+
+
+
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.index_news .list{
+    margin-bottom:20px;
+}
+.index_news .list .t1 h3{ 
+    font-size:16px;
+    line-height:25px;
+    padding-bottom:2px;
+}
+.index_news .list .t1 .text{
+    font-size:13px;
+    line-height:20px;
+    margin:5px 0;
+}
+.index_news .list .t1 .day{
+    display: inline-block;
+    line-height:15px;
+    font-size:13px;
+    margin:0;
+    padding-right:2%;
+}
+.index_news .list .t1 .more3{
+    display: inline-block;
+    padding:3px 15px;
+    font-size:13px;
+    border:1px solid #ddd;
+}
+
+
+
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.index_news .list{
+    margin-bottom:15px;
+}
+.index_news .list .t1 h3{ 
+    font-size:16px;
+    line-height:26px;
+    padding-bottom:2px;
+}
+.index_news .list .t1 .text{
+    font-size:13px;
+    line-height:20px;
+    margin:5px 0;
+}
+.index_news .list .t1 .day{
+    display: none;
+}
+.index_news .list .t1 .more3{
+    display: none;
+}
+
+
+
+}
+
+
+/*.index_link*/
+.index_link{
+    padding:0 0 20px 0;
+}
+.index_link .main{
+    max-width:1300px;
+}
+.index_link .text{
+    color:#666;
+    font-size:15px;
+    line-height:25px;
+}
+.index_link .text a{
+    padding-right:10px;
+}
+.index_link .text a:hover,
+.index_link .text a.on{
+    color:#530a49;
+}
+
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+.index_link .text{
+    width:96%;
+    margin:0 auto;
+}    
+
+
+    
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+.index_link .text{
+    width:96%;
+    margin:0 auto;
+}
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+.index_link .text{
+    width:96%;
+    margin:0 auto;
+}
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.index_link .text{
+    width:96%;
+    margin:0 auto;
+}
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.index_link .text{
+    width:96%;
+    margin:0 auto;
+}
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.index_link .text{
+    width:96%;
+    margin:0 auto;
+}
+
+}
+
+
+
+
+
+/*.footer*/
+.footer{
+    background: #3d3d3d;
+}
+.footer .main{
+    max-width:1300px;
+}
+.footer .list_box{
+    padding:25px 0 15px 0;
+    border-bottom:1px solid #7b7b7b;
+}
+.footer .list_box .foot_nav ul li{
+    float:left;
+    color:#fff;
+    font-size:16px;
+    line-height:26px;
+    padding:0 5%;
+}
+.footer .list_box .phone{
+    text-align:right;
+}
+.footer .list_box .phone .text{
+    color:#fff;
+    font-size:16px;
+    line-height:26px;
+    display: inline-block;
+    padding:0 4%;
+}
+.footer .flogo{
+    text-align:center;
+    padding:20px 0;
+}
+.footer .flogo .img_box{
+    display: inline-block;
+}
+.footer .foot_box{
+    padding:10px 0;
+}
+.footer .foot_box .text{
+    color:#959595;
+    font-size:15px;
+    line-height:25px;
+    text-align:center;
+}
+
+
+
+
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+
+.footer .list_box{
+    padding:25px 0 15px 0;
+    border-bottom:none;
+}
+
+.footer .list_box .foot_nav{
+    text-align:center;
+    padding-bottom:10px;
+    border-bottom:1px solid #7c7c7c;
+}
+.footer .list_box .foot_nav ul{
+    display: inline-block;
+}
+.footer .list_box .foot_nav ul li{
+    line-height:26px;
+    padding:0 10px;
+}
+.footer .list_box .phone{
+    text-align:center;
+}
+.footer .list_box .phone .text{
+    display: inline-block;
+    padding:10px 0;
+}
+.footer .flogo{
+    padding:0 0 10px 0;
+}
+
+.footer .foot_box{
+    padding:10px 0;
+    text-align:center;
+}
+.footer .foot_box .text{
+    display: inline-block;
+    width:85%;
+}
+
+
+
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.footer .list_box{
+    padding:25px 0 15px 0;
+    border-bottom:none;
+}
+
+.footer .list_box .foot_nav{
+    text-align:center;
+    padding-bottom:10px;
+    border-bottom:1px solid #7c7c7c;
+}
+.footer .list_box .foot_nav ul{
+    display: inline-block;
+}
+.footer .list_box .foot_nav ul li{
+    line-height:26px;
+    padding:0 10px;
+}
+.footer .list_box .phone{
+    text-align:center;
+}
+.footer .list_box .phone .text{
+    display: inline-block;
+    padding:10px 0;
+}
+.footer .flogo{
+    padding:0 0 10px 0;
+}
+
+.footer .foot_box{
+    padding:10px 0;
+    text-align:center;
+}
+.footer .foot_box .text{
+    display: inline-block;
+    width:85%;
+}
+
+
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.footer .list_box{
+    padding:25px 0 15px 0;
+    border-bottom:none;
+}
+
+.footer .list_box .foot_nav{
+    text-align:center;
+    padding-bottom:10px;
+    border-bottom:1px solid #7c7c7c;
+}
+.footer .list_box .foot_nav ul{
+    display: inline-block;
+}
+.footer .list_box .foot_nav ul li{
+    line-height:26px;
+    padding:0 5px;
+}
+.footer .list_box .phone{
+    text-align:center;
+}
+.footer .list_box .phone .text{
+    display: inline-block;
+    padding:10px 0;
+}
+.footer .flogo{
+    padding:0 0 10px 0;
+}
+
+.footer .foot_box{
+    padding:10px;
+}
+
+
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.footer .list_box{
+    padding:25px 0 15px 0;
+    border-bottom:none;
+}
+.footer .list_box .foot_nav{
+    text-align:center;
+    padding-bottom:10px;
+    border-bottom:1px solid #7c7c7c;
+}
+.footer .list_box .foot_nav ul{
+    display: inline-block;
+    width:97%;
+}
+.footer .list_box .foot_nav ul li{
+    line-height:26px;
+    padding:0 1%;
+}
+.footer .list_box .phone{
+    text-align:center;
+}
+.footer .list_box .phone .text{
+    display: inline-block;
+    padding:10px 0;
+}
+.footer .flogo{
+    padding:0 0 10px 0;
+}
+
+.footer .foot_box{
+    padding:10px;
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+/*.index_news*/
+.news{
+    padding: 0 0 40px 0;
+}
+.news .main{
+    max-width:1300px;
+}
+.news .htit2{
+    text-align:center;
+    padding-bottom:30px;
+}
+.news .list{
+    margin-bottom:30px;
+}
+.news .list a{
+    display: block;
+}
+.news .list .pic img{
+    width:92%;
+}
+.news .list .t1 h3{
+    color:#373737;
+    font-size:18px;
+    line-height:26px;
+    padding-bottom:8px;
+    background: url(../images/ibg.png)no-repeat center bottom;
+    background-size:100% 1px;  
+    display: inline-block;
+    white-space: nowrap; 
+    width: 100%; 
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.news .list .t1 .text{
+    color:#373737;
+    font-size:15px;
+    line-height:28px;
+    margin:15px 0;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.news .list .t1 .day{
+    display:block;
+    font-size:15px;
+    line-height:28px;
+    margin-bottom:20px;
+}
+.news .list .t1 .more3{
+    display:inline-block;
+    font-size:15px;
+    padding:5px 15px;
+    border:1px solid #ddd;
+}
+
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+.news .list .t1 h3{ 
+    font-size:18px;
+    line-height:30px;
+    padding-bottom:2px;
+}
+.news .list .t1 .text{
+    font-size:15px;
+    line-height:28px;
+    margin:15px 0;
+}
+.news .list .t1 .day{
+    display:block;
+    font-size:15px;
+    line-height:28px;
+    margin-bottom:20px;
+}
+.news .list .t1 .more3{
+    display:inline-block;
+    font-size:15px;
+    padding:5px 15px;
+    border:1px solid #ddd;
+}
+
+
+
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+.news .list{
+    margin-bottom:30px;
+}
+.news .list .t1 h3{ 
+    font-size:18px;
+    line-height:30px;
+    padding-bottom:2px;
+}
+.news .list .t1 .text{
+    font-size:15px;
+    line-height:22px;
+    margin:8px 0;
+}
+.news .list .t1 .day{
+    display:block;
+    font-size:15px;
+    line-height:24px;
+    margin-bottom:10px;
+}
+.news .list .t1 .more3{
+    display:inline-block;
+    font-size:14px;
+    padding:5px 15px;
+    border:1px solid #ddd;
+}
+
+
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.news .list{
+    margin-bottom:25px;
+}
+.news .list .t1 h3{ 
+    font-size:18px;
+    line-height:30px;
+    padding-bottom:2px;
+}
+.news .list .t1 .text{
+    font-size:15px;
+    line-height:24px;
+    margin:10px 0;
+}
+.news .list .t1 .day{
+    display: inline-block;
+    line-height:20px;
+    font-size:15px;
+    margin:0;
+    padding-right:10%;
+}
+.news .list .t1 .more3{
+    display: inline-block;
+    padding:3px 15px;
+    font-size:13px;
+    border:1px solid #ddd;
+}
+
+
+
+
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.news .list{
+    margin-bottom:20px;
+}
+.news .list .t1 h3{ 
+    font-size:16px;
+    line-height:25px;
+    padding-bottom:2px;
+}
+.news .list .t1 .text{
+    font-size:13px;
+    line-height:20px;
+    margin:5px 0;
+}
+.news .list .t1 .day{
+    display: inline-block;
+    line-height:15px;
+    font-size:13px;
+    margin:0;
+    padding-right:2%;
+}
+.news .list .t1 .more3{
+    display: inline-block;
+    padding:3px 15px;
+    font-size:13px;
+    border:1px solid #ddd;
+}
+
+
+
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.news .list{
+    margin-bottom:15px;
+}
+.news .list .t1 h3{ 
+    font-size:16px;
+    line-height:26px;
+    padding-bottom:2px;
+}
+.news .list .t1 .text{
+    font-size:13px;
+    line-height:20px;
+    margin:5px 0;
+}
+.news .list .t1 .day{
+    display: none;
+}
+.news .list .t1 .more3{
+    display: none;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/*.join */
+.join{
+    padding-top:20px;
+}
+.join .main{
+    max-width:1300px;
+}
+.join .htit3{
+    padding-bottom:20px;
+}
+.join .text_box{
+    padding-bottom:30px;
+}
+.join .text_box .text{
+    color:#000;
+    font-size:16px;
+    line-height:26px;
+    padding:0 20px;
+    text-align:center;
+}
+.join .list_box .list{
+    padding:20px 0;
+}
+.join .list_box .list h2{
+    text-align:center;
+}
+.join .list_box .list h2 .count-title{
+    display: inline-block;
+    color:#530a49;
+    font-size:44px;
+    line-height:45px;
+    font-weight: bold;
+}
+.join .list_box .list h2 em{
+    color:#252525;
+    font-size:24px;
+    line-height:60px;
+    position:relative;
+}
+.join .list_box .list h2 em i{
+    color:#252525;
+    font-size:40px;
+    line-height:40px;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    top:-30px;
+    right:-30px;
+}
+.join .list_box .list .text{
+    color:#252525;
+    font-size:16px;
+    line-height:30px;
+    text-align:center;
+}
+.join .pic_box{
+    margin-bottom:20px;
+}
+
+
+
+
+
+
+
+/*join2*/
+.join2{
+    padding:40px 0;
+}
+.join2 .main{
+    max-width:1300px;
+}
+.join2 .htit3{
+    padding-bottom:30px;
+}
+.join2 .list_box .list .text{
+    color:#010101;
+    font-size:17px;
+    line-height:30px;
+    padding:0 10px 18px 10px;
+}
+.join2 .list_box .list .text i{
+    color:#530a49;
+}
+.join2 .list_box .list .pic_box{
+    padding:0 10px 20px 10px;
+    text-align:center;
+}
+.join2 .list_box .list .pic_box .pic{
+    display: inline-block;
+}
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+.join2 .list_box .list .pic_box{
+    padding:20px 10px 20px 10px;
+    text-align:center;
+}
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.join2 .list_box .list .pic_box{
+    padding:20px 10px 20px 10px;
+    text-align:center;
+}
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.join2 .list_box .list .pic_box{
+    padding:20px 10px 20px 10px;
+    text-align:center;
+}
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.join2 .list_box .list .pic_box{
+    padding:0 10px 20px 10px;
+    text-align:center;
+}
+
+}
+
+
+
+
+.join3{
+    padding:40px 0 50px 0;
+    background: #e9e9e9;
+}
+.join3 .main{
+    max-width:1300px;
+}
+.join3 .htit3{
+    margin-bottom:30px;
+} 
+.join3 .join3_box{
+    position: relative;
+}
+.join3 .join3_swiper{
+    width:85%;
+    margin:0 auto;
+    overflow: hidden;
+}
+.join3 .join3_swiper .swiper-slide{
+    width:33.3%;
+    text-align:center;
+}
+.join3 .join3_swiper .sprev,
+.join3 .join3_swiper .snext{
+    width:30px;
+    height:60px;
+    cursor: pointer;
+    position: absolute;
+    top:34%;
+    z-index: 30;
+    outline: none
+}
+.join3 .join3_swiper .sprev{
+    right:10px;
+    background: url(../images/r_bg2.png)no-repeat center center;
+    background-size:25px 55px; 
+}
+.join3 .join3_swiper .snext{
+    left:10px;
+    background: url(../images/l_bg2.png)no-repeat center center;
+    background-size:25px 55px; 
+}
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+.join3 .join3_swiper{
+    width:80%;
+}
+.join3 .join3_swiper .swiper-slide img{
+    width:95%;
+}
+
+
+
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+.join3 .join3_swiper .sprev{
+    right:0;
+}
+.join3 .join3_swiper .snext{
+    left:0;
+}
+
+
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.join3 .join3_swiper .sprev{
+    right:0;
+}
+.join3 .join3_swiper .snext{
+    left:0;
+}
+
+
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.join3 .join3_swiper .sprev{
+    right:0;
+}
+.join3 .join3_swiper .snext{
+    left:0;
+}
+
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.join3 .join3_swiper .sprev{
+    right:0;
+}
+.join3 .join3_swiper .snext{
+    left:0;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/*.join5*/
+.join5{
+    padding:40px 0;
+}
+.join5 .main{
+    max-width:1300px;
+}
+.join5 .htit3{
+    padding-bottom:20px;
+}
+.join5 .list_box .list{
+    text-align:center;
+}
+.join5 .list_box .list .text_box{
+    width:96%;
+    display: inline-block;
+    padding:20px 0;
+    text-align:left;
+    border:1px solid #aaa;
+}
+.join5 .list_box .list .text_box h3{
+    color:#40464b;
+    font-size:22px;
+    line-height:30px;
+    padding-bottom:6px;
+    margin-left:30px;
+    margin-right:30px;
+    text-transform: uppercase;
+    border-bottom:1px solid #aaa;
+}
+.join5 .list_box .list .text_box .text{
+    color:#40464b;
+    font-size:17px;
+    line-height:28px;
+    padding:20px 30px;
+}
+.join5 .list_box .form_box{
+    text-align:right;
+}
+.join5 .list_box .form_box h3{
+    text-align:left;
+    display:inline-block;
+    width:96%;
+    color:#40464b;
+    font-size:22px;
+    line-height:32px;
+    padding-bottom:10px;
+}
+.join5 .list_box .form_box form{
+    text-align:left;
+    display: inline-block;
+    width:96%;
+}
+.join5 .list_box .form_box form .box1{
+    float:left;
+    width:30%;
+}
+.join5 .list_box .form_box form .box1 .name,
+.join5 .list_box .form_box form .box1 .phone,
+.join5 .list_box .form_box form .box1 .e-mail{
+    width:99%;
+    height:40px;
+    line-height:40px;
+    text-indent:10px;
+    color:#40464b;
+    font-size:15px;
+    border:1px solid #aaa;
+    margin-bottom:15px;
+}
+.join5 .list_box .form_box form .box2{
+    float:right;
+    width:67%;
+}
+.join5 .list_box .form_box form .box2 .message{
+    width:99%;
+    height:155px;
+    line-height:40px;
+    text-indent:10px;
+    color:#40464b;
+    font-size:15px;
+    border:1px solid #aaa;
+    margin-bottom:15px;
+}
+.join5 .list_box .form_box form .box3{
+    width:100%;
+    float:left;
+    text-align:right;
+}
+.join5 .list_box .form_box form .box3 .pic{
+    width:106px;
+    height:42px;
+    line-height:42px;
+    margin-right:20px;
+    display: inline-block;
+}
+.join5 .list_box .form_box form .box3 .number{
+    height:40px;
+    line-height:40px;
+    color:#40464b;
+    font-size:15px;
+    border:1px solid #aaa;
+    margin-right:20px;
+    display: inline-block;
+}
+.join5 .list_box .form_box form .box3 .submit{
+    width:156px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    color:#fff;
+    font-size:16px;
+    background: #530a49;
+    border:1px solid #530a49;
+}
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+
+.join5 .list_box .list .text_box{
+    width:90%;
+    padding:20px 24px;
+}
+.join5 .list_box .form_box{
+    text-align:center;
+    margin-top:20px;
+}
+
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.join5 .list_box .list .text_box{
+    width:96%;
+}
+.join5 .list_box .form_box{
+    text-align:center;
+    margin-top:20px;
+}
+.join5 .list_box .form_box{
+    text-align:center;
+}
+.join5 .list_box .form_box form .box1{
+    float:left;
+    width:100%;
+}
+.join5 .list_box .form_box form .box2{
+    float:left;
+    width:100%;
+}
+.join5 .list_box .form_box form .box1 .name,
+.join5 .list_box .form_box form .box1 .phone,
+.join5 .list_box .form_box form .box1 .e-mail,
+.join5 .list_box .form_box form .box2 .message{
+    width:100%;
+}
+.join5 .list_box .form_box form .box3{
+    text-align:center;
+}
+.join5 .list_box .form_box form .box3 .pic{
+    margin-bottom:15px;
+}
+.join5 .list_box .form_box form .box3 .number{
+    margin-bottom:0;
+}
+.join5 .list_box .form_box form .box3 .submit{
+    width:100%;
+}
+
+
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.join5 .list_box .list .text_box{
+    width:96%;
+}
+.join5 .list_box .form_box{
+    text-align:center;
+    margin-top:20px;
+}
+.join5 .list_box .form_box{
+    text-align:center;
+}
+.join5 .list_box .form_box form .box1{
+    float:left;
+    width:100%;
+}
+.join5 .list_box .form_box form .box2{
+    float:left;
+    width:100%;
+}
+.join5 .list_box .form_box form .box1 .name,
+.join5 .list_box .form_box form .box1 .phone,
+.join5 .list_box .form_box form .box1 .e-mail,
+.join5 .list_box .form_box form .box2 .message{
+    width:100%;
+}
+
+.join5 .list_box .form_box form .box3 .pic{
+    margin-bottom:15px;
+}
+.join5 .list_box .form_box form .box3 .number{
+    margin-bottom:0;
+}
+.join5 .list_box .form_box form .box3 .submit{
+    width:100%;
+}
+
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.join5 .list_box .list .text_box{
+    width:96%;
+}
+.join5 .list_box .form_box{
+    text-align:center;
+    margin-top:20px;
+}
+.join5 .list_box .form_box{
+    text-align:center;
+}
+.join5 .list_box .form_box form .box1{
+    float:left;
+    width:100%;
+}
+.join5 .list_box .form_box form .box2{
+    float:left;
+    width:100%;
+}
+.join5 .list_box .form_box form .box1 .name,
+.join5 .list_box .form_box form .box1 .phone,
+.join5 .list_box .form_box form .box1 .e-mail,
+.join5 .list_box .form_box form .box2 .message{
+    width:100%;
+}
+.join5 .list_box .form_box form .box3 .pic{
+    margin-bottom:15px;
+}
+.join5 .list_box .form_box form .box3 .number{
+    margin-bottom:0;
+}
+.join5 .list_box .form_box form .box3 .submit{
+    width:100%;
+}
+
+
+}
+
+
+
+
+
+
+/*cont*/
+.cont{
+    padding:40px 0;
+}
+.cont .main{
+    max-width:1300px;
+}
+.cont .htit2{
+    text-align:center;
+    padding-bottom:30px;
+}
+.cont .list_box .list{
+    text-align:left;
+}
+.cont .list_box .list .text_box{
+    width:95%;
+    text-align:left;
+    display: inline-block;
+}
+.cont .list_box .list .text_box h3{
+    color:#282828;
+    font-size:22px;
+    line-height:32px;
+    padding-bottom:10px;
+}
+.cont .list_box .list .text_box .text{
+    color:#111111;
+    font-size:17px;
+    line-height:36px;
+}
+.cont .list_box .list .text_box .text i{
+    float:left;
+    max-width:30%;
+}
+.cont .list_box .list .text_box .text span{
+    float:left;
+    max-width:70%;
+}
+
+.cont .list_box .form_box{
+    text-align:right;
+}
+.cont .list_box .form_box form{
+    width:85%;
+    padding-left:7%;
+    border-left:1px solid #ddd;
+    display: inline-block;
+} 
+.cont .list_box .form_box form .box1{
+    width:100%;
+}
+.cont .list_box .form_box form .box1 .name,
+.cont .list_box .form_box form .box1 .phone,
+.cont .list_box .form_box form .box1 .are,
+.cont .list_box .form_box form .box1 .e-mail{
+    float:left;
+    width:45%;
+    margin-right:9%;
+    display: inline-block;
+    height:50px;
+    line-height:50px;
+    text-indent:10px;
+    color:#40464b;
+    font-size:16px;
+    border:1px solid #ddd;
+    margin-bottom:25px;
+}
+.cont .list_box .form_box form .box1 .phone,
+.cont .list_box .form_box form .box1 .e-mail{
+    margin-right:0;
+}
+.cont .list_box .form_box form .box2 .message{
+    width:99%;
+    margin-right:9%;
+    display: inline-block;
+    height:150px;
+    line-height:50px;
+    text-indent:10px;
+    color:#40464b;
+    font-size:16px;
+    border:1px solid #ddd;
+    margin-bottom:25px;
+}
+.cont .list_box .form_box form .box3{
+    width:100%;
+    text-align:left;
+}
+.cont .list_box .form_box form .box3 .pic{
+    width:17%;
+    height:42px;
+    margin-right:4%;
+    line-height:42px;
+    display: inline-block;
+}
+.cont .list_box .form_box form .box3 .number{
+    width:22%;
+    height:40px;
+    line-height:40px;
+    text-indent:10px;
+    margin-right:2%;
+    color:#40464b;
+    font-size:16px;
+    border:1px solid #ddd;
+}
+.cont .list_box .form_box form .box3 .reset,
+.cont .list_box .form_box form .box3 .submit{
+    width:25%;
+    height:50px;
+    color:#fff;
+    font-size:16px;
+    border:1px solid #ddd;
+    display: inline-block;
+    background: #999999;
+    cursor: pointer;
+}
+.cont .list_box .form_box form .box3 .reset{
+    margin-right:2%;
+}
+.cont .list_box .form_box form .box3 .submit:hover,
+.cont .list_box .form_box form .box3 .reset:hover{
+    background: #530a49;
+}
+
+
+
+.cont2 .map{
+    width:100%;
+    max-width:1920px;
+}
+.cont2 .map img{
+    width:100%;
+}
+
+
+
+
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+.cont .list_box .list{
+    text-align:center;
+}
+.cont .list_box .list .text_box{
+    width:95%;
+}
+
+
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+.cont .list_box .list{
+    text-align:center;
+}
+.cont .list_box .list .text_box{
+    width:90%;
+}
+
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+.cont .list_box .list{
+    text-align:center;
+}
+.cont .list_box .list .text_box{
+    width:90%;
+}
+.cont .list_box .form_box{
+    text-align:center;
+}
+.cont .list_box .form_box form{
+    width:90%;
+    padding-left:0;
+    border-left:none;
+    margin-top:25px;
+    display: inline-block;
+} 
+.cont .list_box .form_box form .box1 .name, 
+.cont .list_box .form_box form .box1 .phone, 
+.cont .list_box .form_box form .box1 .are,
+.cont .list_box .form_box form .box1 .e-mail{
+    margin-right:0;
+    width:100%;
+}
+.cont .list_box .form_box form .box2 .message{
+    margin-right:0;
+    width:100%;
+}
+.cont .list_box .form_box form .box3 .pic{
+    width:35%;
+    margin-right:4%;
+    margin-bottom:25px;
+}
+.cont .list_box .form_box form .box3 .number{
+    width:60%;
+    margin-right:0;
+    margin-bottom:25px;
+}
+.cont .list_box .form_box form .box3 .reset{
+    width:46%;
+    margin-right:7%;
+}
+.cont .list_box .form_box form .box3 .submit{
+    width:46%;
+}
+
+
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.cont .list_box .list{
+    text-align:center;
+}
+.cont .list_box .list .text_box{
+    width:90%;
+}
+
+
+.cont .list_box .form_box{
+    text-align:center;
+}
+.cont .list_box .form_box form{
+    width:90%;
+    padding-left:0;
+    border-left:none;
+    margin-top:25px;
+    display: inline-block;
+} 
+.cont .list_box .form_box form .box1 .name, 
+.cont .list_box .form_box form .box1 .phone, 
+.cont .list_box .form_box form .box1 .are,
+.cont .list_box .form_box form .box1 .e-mail{
+    margin-right:0;
+    width:100%;
+}
+.cont .list_box .form_box form .box2 .message{
+    margin-right:0;
+    width:100%;
+}
+.cont .list_box .form_box form .box3 .pic{
+    width:35%;
+    margin-right:3%;
+    margin-bottom:25px;
+}
+.cont .list_box .form_box form .box3 .number{
+    width:60%;
+    margin-right:0;
+    margin-bottom:25px;
+}
+.cont .list_box .form_box form .box3 .reset{
+    width:46%;
+    margin-right:7%;
+}
+.cont .list_box .form_box form .box3 .submit{
+    width:46%;
+}
+
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+    
+.cont .list_box .list{
+    text-align:center;
+}
+.cont .list_box .list .text_box{
+    width:90%;
+}
+.cont .list_box .list .text_box h3{
+    font-size:18px;
+    line-height:28px;
+}
+.cont .list_box .list .text_box .text{
+    font-size:15px;
+    line-height:25px;
+}
+
+.cont .list_box .form_box{
+    text-align:center;
+}
+.cont .list_box .form_box form{
+    width:90%;
+    padding-left:0;
+    border-left:none;
+    margin-top:25px;
+    display: inline-block;
+} 
+.cont .list_box .form_box form .box1 .name, 
+.cont .list_box .form_box form .box1 .phone, 
+.cont .list_box .form_box form .box1 .are,
+.cont .list_box .form_box form .box1 .e-mail{
+    margin-right:0;
+    width:100%;
+}
+.cont .list_box .form_box form .box2 .message{
+    margin-right:0;
+    width:100%;
+}
+.cont .list_box .form_box form .box3 .pic{
+    width:35%;
+    margin-right:3%;
+    margin-bottom:25px;
+}
+.cont .list_box .form_box form .box3 .number{
+    width:60%;
+    margin-right:0;
+    margin-bottom:25px;
+}
+.cont .list_box .form_box form .box3 .reset{
+    width:45%;
+    margin-right:8%;
+}
+.cont .list_box .form_box form .box3 .submit{
+    width:45%;
+}
+
+
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.cont .list_box .list{
+    text-align:center;
+}
+.cont .list_box .list .text_box{
+    width:92%;
+}
+.cont .list_box .list .text_box h3{
+    font-size:17px;
+    line-height:28px;
+}
+.cont .list_box .list .text_box .text{
+    font-size:15px;
+    line-height:25px;
+}
+
+
+.cont .list_box .form_box{
+    text-align:center;
+}
+.cont .list_box .form_box form{
+    width:90%;
+    padding-left:0;
+    border-left:none;
+    margin-top:25px;
+    display: inline-block;
+} 
+.cont .list_box .form_box form .box1 .name, 
+.cont .list_box .form_box form .box1 .phone, 
+.cont .list_box .form_box form .box1 .are,
+.cont .list_box .form_box form .box1 .e-mail{
+    margin-right:0;
+    width:100%;
+}
+.cont .list_box .form_box form .box2 .message{
+    margin-right:0;
+    width:100%;
+}
+.cont .list_box .form_box form .box3 .pic{
+    width:35%;
+    margin-right:3%;
+    margin-bottom:25px;
+}
+.cont .list_box .form_box form .box3 .number{
+    width:60%;
+    margin-right:0;
+    margin-bottom:25px;
+}
+.cont .list_box .form_box form .box3 .reset{
+    width:46%;
+    margin-right:6%;
+}
+.cont .list_box .form_box form .box3 .submit{
+    width:46%;
+}
+
+}
+
+
+
+
+/*.about */
+.about{
+    padding:60px 0;
+}
+.about .main{
+    max-width:1300px;
+}
+.about .list_box .left .text_box{
+    display: inline-block;
+    text-align:left;
+}
+.about .list_box .left .text_box .htit3{
+    text-align:left;
+    padding-bottom:20px;
+}
+.about .list_box .left .text_box .text{
+    color:#1f1f1f;
+    font-size:15px;
+    line-height:25px;
+    text-align:left;
+}
+.about .list_box .right{
+    text-align:right;
+}
+.about .list_box .right .pic_box{
+    display: inline-block;
+    width:95%;
+}
+.about .list_box .right .pic_box .pic{
+    width:100%;
+}
+.about .list_box .right .pic_box .pic img{
+    width:100%;
+}
+
+
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+.about .list_box .left{
+    text-align:center;
+}
+.about .list_box .left .text_box{
+    display: inline-block;
+    width:94%;
+    text-align:left;
+}
+.about .list_box .right{
+    text-align:center;
+}
+.about .list_box .right .pic_box{
+    text-align:right;
+    width:94%;
+    display: inline-block;
+}
+
+
+
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+.about .list_box .left{
+    text-align:center;
+}
+.about .list_box .left .text_box{
+    display: inline-block;
+    width:94%;
+    text-align:left;
+}
+.about .list_box .right{
+    text-align:center;
+}
+.about .list_box .right .pic_box{
+    text-align:right;
+    width:94%;
+    display: inline-block;
+}
+
+
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+.about .list_box .left{
+    text-align:center;
+}
+.about .list_box .left .text_box{
+    display: inline-block;
+    width:94%;
+    text-align:left;
+}
+.about .list_box .right{
+    text-align:center;
+    margin-top:30px;
+}
+.about .list_box .right .pic_box{
+    text-align:right;
+    width:94%;
+    display: inline-block;
+}
+
+
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.about .list_box .left{
+    text-align:center;
+}
+.about .list_box .left .text_box{
+    display: inline-block;
+    width:94%;
+    text-align:left;
+}
+.about .list_box .right{
+    text-align:center;
+    margin-top:30px;
+}
+.about .list_box .right .pic_box{
+    text-align:right;
+    width:94%;
+    display: inline-block;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.about .list_box .left{
+    text-align:center;
+}
+.about .list_box .left .text_box{
+    display: inline-block;
+    width:94%;
+    text-align:left;
+}
+.about .list_box .right{
+    text-align:center;
+    margin-top:30px;
+}
+.about .list_box .right .pic_box{
+    text-align:right;
+    width:94%;
+    display: inline-block;
+}
+
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.about .list_box .left{
+    text-align:center;
+}
+.about .list_box .left .text_box{
+    display: inline-block;
+    width:94%;
+    text-align:left;
+}
+.about .list_box .right{
+    text-align:center;
+    margin-top:30px;
+}
+.about .list_box .right .pic_box{
+    text-align:right;
+    width:94%;
+    display: inline-block;
+}
+
+
+
+
+}
+
+
+
+
+/*about2*/
+.about2{
+    padding:30px 0 50px 0;
+    background:#f4f4f4;
+}
+.about2 .main{
+    max-width:1300px;
+}
+.about2 .htit3{
+    padding-bottom:25px;
+}
+.about2 .htit3 h2{
+    color:#4d4d4d;
+    font-size:15px;
+    line-height:25px;
+}
+.about2 .list_box .box{
+    text-align:center;
+}
+.about2 .list_box .list{
+    display: inline-block;
+    width:97%;
+    position: relative;
+}
+.about2 .list_box .list .img_box{
+    width:100%;
+}
+.about2 .list_box .list .img_box img{
+    width:100%;
+}
+.about2 .list_box .list .text{
+    color:#ffffff;
+    font-size:16px;
+    line-height:36px;
+    width:100%;
+    background: rgba(0,0,0,.6);
+    position: absolute;
+    left:0;
+    bottom:0;
+}
+
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+.about2{
+    padding:30px 0;
+}
+.about2 .list_box .box{
+    margin-bottom:30px;
+}
+.about2 .list_box .list .img_box{
+    width:100%;
+    display: block;
+}
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.about2{
+    padding:30px 0;
+}
+.about2 .list_box .box{
+    margin-bottom:30px;
+}
+.about2 .list_box .list .img_box{
+    width:100%;
+    display: block;
+}
+
+
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.about2{
+    padding:30px 0;
+}
+.about2 .list_box .box{
+    margin-bottom:30px;
+}
+.about2 .list_box .list .img_box{
+    width:100%;
+    display: block;
+}
+
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.about2{
+    padding:30px 0;
+}
+.about2 .list_box .box{
+    margin-bottom:30px;
+}
+.about2 .list_box .list .img_box{
+    width:100%;
+    display: block;
+}
+
+
+}
+
+
+
+
+/*about3*/
+.about3{
+    padding:30px 0 50px 0;
+}
+.about3 .main{
+    max-width:1300px;
+}
+.about3 .htit3{
+    padding-bottom:25px;
+}
+.about3 .htit3 h2{
+    color:#4d4d4d;
+    font-size:15px;
+    line-height:25px;
+}
+.about3 .about3_box{
+    background: url(../images/ab_bg.jpg)no-repeat center bottom 23px;
+    background-size:100% 1px; 
+}
+.about3 .ab3_bd_swiper{
+    width:100%;
+    position: relative;
+}
+
+.about3 .ab3_bd_swiper .sprev,
+.about3 .ab3_bd_swiper .snext{
+    width:20%;
+    height:60px;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top:calc(50% - 30px);
+    z-index: 11;
+}
+.about3 .ab3_bd_swiper .sprev{
+    left:2%;
+    background: url(../images/l_bg3.png)no-repeat center center;
+    background-size:33px 55px; 
+}
+.about3 .ab3_bd_swiper .snext{
+    right:2%;
+    background: url(../images/r_bg3.png)no-repeat center center;
+    background-size:33px 55px; 
+}
+
+.about3 .ab3_bd_swiper .swiper-slide{
+    margin:0 auto;
+}
+.about3 .ab3_bd_swiper .swiper-slide .text_box{
+    width:35%;
+    margin:0 auto;
+}
+.about3 .ab3_bd_swiper .swiper-slide .text_box h3{
+    color:#252525;
+    font-size:20px;
+    line-height:30px;
+    padding-bottom:10px;
+    text-align:center;
+}
+.about3 .ab3_bd_swiper .swiper-slide .text_box .text{
+    color:#252525;
+    font-size:16px;
+    line-height:27px;
+}
+
+.about3 .ab3_hd_swiper{
+    width:80%;
+    height:120px;
+    margin:30px auto 0 auto;
+}
+.about3 .ab3_hd_swiper .swiper-slide{
+    margin:0 auto;
+    text-align:center;
+}
+.about3 .ab3_hd_swiper .swiper-slide .text{
+    width:115px;
+    height:115px;
+    color:#530a49;
+    font-size:33px;
+    line-height:44px;
+    border-radius: 10px;
+    display: inline-block;
+    margin:0 auto;
+    position: relative;
+}
+.about3 .ab3_hd_swiper .swiper-slide .text p{
+    padding-top:20px;
+}
+.about3 .ab3_hd_swiper .swiper-slide .text i{
+    display: inline-block;
+    width:16px;
+    height:16px;
+    border:1px solid #333;
+    border-radius: 15px;
+    background: #fff;
+    position: absolute;
+    left:calc(50% - 8px);
+    bottom:10px;
+}
+.about3 .ab3_hd_swiper .swiper-slide.swiper-slide-thumb-active .text{
+    color:#fff;
+    background:#530a49;
+}
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+.about3 .ab3_bd_swiper .swiper-slide .text_box{
+    width:60%;
+    margin:0 auto;
+}
+.about3 .ab3_bd_swiper .sprev,
+.about3 .ab3_bd_swiper .snext{
+    width:15%;
+}
+
+
+
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.about3 .about3_box{
+    background: none; 
+}
+.about3 .ab3_bd_swiper .swiper-slide .text_box{
+    width:70%;
+    margin:0 auto;
+}
+.about3 .ab3_bd_swiper .sprev,
+.about3 .ab3_bd_swiper .snext{
+    width:8%;
+}
+.about3 .ab3_bd_swiper .sprev{
+    left:1%;
+}
+.about3 .ab3_bd_swiper .snext{
+    right:1%;
+}
+
+
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.about3 .about3_box{
+    background: none; 
+}
+.about3 .ab3_bd_swiper .swiper-slide .text_box{
+    width:80%;
+    margin:0 auto;
+}
+.about3 .ab3_bd_swiper .sprev,
+.about3 .ab3_bd_swiper .snext{
+    width:8%;
+}
+.about3 .ab3_bd_swiper .sprev{
+    left:1%;
+    background-size:20px 40px; 
+}
+.about3 .ab3_bd_swiper .snext{
+    right:1%;
+    background-size:20px 40px; 
+}
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.about3 .about3_box{
+    background: none; 
+}
+.about3 .ab3_bd_swiper .swiper-slide .text_box{
+    width:80%;
+    margin:0 auto;
+}
+.about3 .ab3_bd_swiper .sprev,
+.about3 .ab3_bd_swiper .snext{
+    width:8%;
+}
+.about3 .ab3_bd_swiper .sprev{
+    left:1%;
+    background-size:20px 40px; 
+}
+.about3 .ab3_bd_swiper .snext{
+    right:1%;
+    background-size:20px 40px; 
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+/*about4*/
+.about4{
+    padding:50px 0 120px 0;
+    background: url(../images/ab_bg2.jpg)no-repeat center center;
+    background-size:100% 100%; 
+}
+.about4 .main{
+    max-width:1300px;
+}
+.about4 .htit3{
+    padding-bottom:25px;
+}
+.about4 .htit3 h2{
+    color:#fff;
+    font-size:15px;
+    line-height:25px;
+}
+.about4 .htit3 p{
+    color:#fff;
+}
+.about4 .ab4_swiper{
+    width:100%;
+    position: relative;
+    padding-bottom:70px;
+    overflow: hidden;
+}
+.about4 .ab4_swiper .swiper-slide{
+    text-align:center;
+    width:33%;
+}
+.about4 .ab4_swiper .swiper-slide a{
+    display: block;
+}
+.about4 .ab4_swiper .swiper-slide .pic{
+    display: inline-block;
+    width:95%;
+    margin:0 auto;
+    text-align:center;
+}
+.about4 .ab4_swiper .swiper-slide .pic img{
+    width:100%;
+}
+.about4 .ab4_swiper .swiper-scrollbar{
+    background: #fff;
+    height:15px;
+}
+.about4 .ab4_swiper .swiper-scrollbar .swiper-scrollbar-drag{
+    background: #530a49;
+}
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+
+.about4 .ab4_swiper .swiper-slide .pic img{
+    width:80%;
+}
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.about4{
+    padding:50px 0 90px 0;
+}
+.about4 .ab4_swiper .swiper-slide .pic img{
+    width:95%;
+}
+
+
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.about4{
+    padding:50px 0 80px 0;
+}
+.about4 .ab4_swiper .swiper-slide .pic img{
+    width:95%;
+}
+.about4 .ab4_swiper .swiper-scrollbar{
+    background: #fff;
+    height:10px;
+}
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.about4{
+    padding:50px 0 80px 0;
+}
+.about4 .ab4_swiper .swiper-slide .pic img{
+    width:95%;
+}
+.about4 .ab4_swiper .swiper-scrollbar{
+    background: #fff;
+    height:10px;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/*about5*/
+.about5{
+    padding:30px 0 50px 0;
+}
+.about5 .main{
+    max-width:1300px;
+}
+.about5 .htit3{
+    padding-bottom:25px;
+}
+.about5 .htit3 h2{
+    color:#4d4d4d;
+    font-size:15px;
+    line-height:25px;
+}
+.about5 .ab5_swiper{
+    overflow: hidden;
+    width:100%;
+    position: relative;
+}
+
+.about5 .ab5_swiper .sprev,
+.about5 .ab5_swiper .snext{
+    width:5%;
+    height:60px;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top:calc(50% - 30px);
+    z-index: 11;
+}
+.about5 .ab5_swiper .sprev{
+    right:2%;
+    background: url(../images/r_bg3.png)no-repeat center center;
+    background-size:33px 55px; 
+}
+.about5 .ab5_swiper .snext{
+    left:2%;
+    background: url(../images/l_bg3.png)no-repeat center center;
+    background-size:33px 55px; 
+}
+
+.about5 .ab5_swiper .swiper-slide{
+    text-align:center;
+}
+.about5 .ab5_swiper .swiper-slide a{
+    display: inline-block;
+}
+.about5 .ab5_swiper .swiper-slide .img_box{
+    width:70%;
+} 
+
+
+
+
+
+
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+.about5 .ab5_swiper .sprev,
+.about5 .ab5_swiper .snext{
+    width:60px;
+    height:120px;
+}
+.about5 .ab5_swiper .sprev{
+    right:0;
+    background:rgba(255,255,255,.9) url(../images/r_bg3.png)no-repeat center center;
+    background-size:33px 55px; 
+}
+.about5 .ab5_swiper .snext{
+    left:0;
+    background: rgba(255,255,255,.9) url(../images/l_bg3.png)no-repeat center center;
+    background-size:33px 55px; 
+}
+
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+.about5 .ab5_swiper .sprev,
+.about5 .ab5_swiper .snext{
+    width:60px;
+    height:120px;
+}
+.about5 .ab5_swiper .sprev{
+    right:0;
+    background:rgba(255,255,255,.9) url(../images/r_bg3.png)no-repeat center center;
+    background-size:33px 55px; 
+}
+.about5 .ab5_swiper .snext{
+    left:0;
+    background: rgba(255,255,255,.9) url(../images/l_bg3.png)no-repeat center center;
+    background-size:33px 55px; 
+}
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.about5 .ab5_swiper .sprev,
+.about5 .ab5_swiper .snext{
+    width:50px;
+    height:100px;
+}
+.about5 .ab5_swiper .sprev{
+    right:0;
+    background:rgba(255,255,255,.9) url(../images/r_bg3.png)no-repeat center center;
+    background-size:33px 55px; 
+}
+.about5 .ab5_swiper .snext{
+    left:0;
+    background: rgba(255,255,255,.9) url(../images/l_bg3.png)no-repeat center center;
+    background-size:33px 55px; 
+}
+
+
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.about5 .ab5_swiper .sprev,
+.about5 .ab5_swiper .snext{
+    width:40px;
+    height:80px;
+}
+.about5 .ab5_swiper .sprev{
+    right:0;
+    background:rgba(255,255,255,.9) url(../images/r_bg3.png)no-repeat center center;
+    background-size:22px 35px; 
+}
+.about5 .ab5_swiper .snext{
+    left:0;
+    background: rgba(255,255,255,.9) url(../images/l_bg3.png)no-repeat center center;
+    background-size:22px 35px; 
+}
+
+
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.about5 .ab5_swiper .sprev,
+.about5 .ab5_swiper .snext{
+    width:40px;
+    height:80px;
+}
+.about5 .ab5_swiper .sprev{
+    right:1%;
+    background:rgba(255,255,255,.9) url(../images/r_bg3.png)no-repeat center center;
+    background-size:22px 35px; 
+}
+.about5 .ab5_swiper .snext{
+    left:1%;
+    background: rgba(255,255,255,.9) url(../images/l_bg3.png)no-repeat center center;
+    background-size:22px 35px; 
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+/*.case*/
+.case{
+    padding:20px 0 50px 0;
+}
+.case .main{
+    max-width:1300px;
+}
+.case .htit2{
+    text-align:center;
+    padding-bottom:30px;
+}
+.case .list_box .box{
+    text-align:center;
+    margin-bottom:20px;
+} 
+.case .list_box .box .list{
+    display: inline-block;
+    width:97%;
+    text-align:center;
+}
+.case .list_box .box .list .img_box{
+    display: inline-block;
+    width:100%;
+    text-align:center;
+    position: relative;
+}
+.case .list_box .box .list:hover{
+    box-shadow: #ddd 5px 5px 5px;
+}
+.case .list_box .box .list:hover .img_box span{
+    width:100%;
+    height:100%;
+    display: inline-block;
+    background: rgba(83,10,73,.8) url(../images/case_bg.png)no-repeat center center;
+    background-size:36px 36px; 
+    position: absolute;
+    left:0;
+    bottom:0;
+    z-index: 11;
+}
+.case .list_box .box .list .img_box img{
+    display: inline-block;
+    width:100%;
+    text-align:center;
+}
+.case .list_box .box .list .text{
+    display: inline-block;
+    width:100%;
+    text-align:center;
+    color:#171717;
+    font-size:20px;
+    line-height:60px;
+    padding-bottom:20px;
+    position: relative;
+}
+.case .list_box .box .list:hover .text i{
+    display: inline-block;
+    width:50px;
+    height:4px;
+    background: #530a49;
+    position: absolute;
+    left:calc(50% - 25px);
+    bottom:16px;
+}
+.case .pages{
+    margin-top:20px;
+}
+
+
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+.case .list_box .box .list{
+    width:95%;
+    text-align:center;
+    box-shadow: #ddd 5px 5px 5px;
+}
+
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.case .list_box .box .list{
+    width:95%;
+    text-align:center;
+    box-shadow: #ddd 5px 5px 5px;
+}
+.case .list_box .box .list:hover .text i{
+    bottom:10px;
+}
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.case .list_box .box .list{
+    width:95%;
+    text-align:center;
+    box-shadow: #ddd 5px 5px 5px;
+}
+.case .list_box .box .list .text{
+    display: inline-block;
+    width:100%;
+    text-align:center;
+    color:#171717;
+    font-size:15px;
+    line-height:40px;
+    padding-bottom:10px;
+    position: relative;
+}
+.case .list_box .box .list:hover .text i{
+    bottom:10px;
+}
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.case .list_box .box .list{
+    width:95%;
+    text-align:center;
+    box-shadow: #ddd 5px 5px 5px;
+}
+
+.case .list_box .box .list .text{
+    display: inline-block;
+    width:100%;
+    text-align:center;
+    color:#171717;
+    font-size:15px;
+    line-height:40px;
+    padding-bottom:10px;
+    position: relative;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*.pro*/
+.pro{
+    padding:20px 0 50px 0;
+}
+.pro .main{
+    max-width:1300px;
+}
+.pro .htit2{
+    text-align:center;
+    padding-bottom:30px;
+}
+.pro .list_box .box{
+    text-align:center;
+    margin-bottom:20px;
+} 
+.pro .list_box .box .list{
+    display: inline-block;
+    width:97%;
+    text-align:center;
+}
+.pro .list_box .box .list .pic_box{
+    display: inline-block;
+    width:100%;
+    text-align:center;
+    position: relative;
+}
+.pro .list_box .box .list:hover{
+    box-shadow: #ddd 5px 5px 5px;
+}
+.pro .list_box .box .list .pic_box .pic{
+    width:100%;
+    display: inline-block;
+    vertical-align:middle;
+}
+.pro .list_box .box .list .pic_box .pic img{
+    width:100%;
+}
+.pro .list_box .box .list .pic_box .pic2 img{
+    width:100%;
+}
+.pro .list_box .box .list .pic_box .pic2{
+    width:100%;
+    height:100%;
+    display: none;
+    position: absolute;
+    left:0;
+    bottom:0;
+    z-index: 11;
+}
+.pro .list_box .box .list:hover .pic_box .pic2{
+    display: inline-block;
+    vertical-align:middle;
+}
+.pro .list_box .box .list .img_box img{
+    display: inline-block;
+    width:100%;
+    text-align:center;
+}
+.pro .list_box .box .list .text_box{
+    display: inline-block;
+    width:100%;
+    text-align:left;
+    position: relative;
+}
+.pro .list_box .box .list .text_box i{
+    display: none;
+    background:url(../images/pro_bg.png)no-repeat center center; 
+    background-size:36px 36px; 
+    width:40px;
+    height:40px;
+    position: absolute;
+    right:10px;
+    bottom:calc(50% - 20px);
+    z-index: 11;
+}
+.pro .list_box .box .list:hover .text_box i{
+    display: block;
+}
+.pro .list_box .box .list .text_box h3{
+    color:#530a49;
+    font-size:24px;
+    line-height:30px;
+    padding:5px 15px;
+    margin:0 10px;
+    background:url(../images/pro_bg2.png)no-repeat left top 6px; 
+    background-size:4px 26px; 
+}
+.pro .list_box .box .list .text_box .text{
+    color:#4d4d4d;
+    font-size:15px;
+    line-height:25px;
+    padding-bottom:10px;
+    margin:0 10px;
+}
+
+.pro .pages{
+    margin-top:20px;
+}
+
+
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+
+.pro .list_box .box .list{
+    width:95%;
+    text-align:center;
+}
+
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+
+.pro .list_box .box .list{
+    width:95%;
+    text-align:center;
+    box-shadow: #ddd 5px 5px 5px;
+}
+.pro .list_box .box .list .text_box i{
+    display: inline-block;
+    background:url(../images/pro_bg.png)no-repeat center center; 
+    background-size:16px 16px; 
+    width:20px;
+    height:20px;
+    position: absolute;
+    right:10px;
+    bottom:calc(50% - 10px);
+    z-index: 11;
+}
+.pro .list_box .box .list .text_box h3{
+    color:#530a49;
+    font-size:15px;
+    line-height:25px;
+    padding:5px 15px;
+    margin:0 10px;
+    background:url(../images/pro_bg2.png)no-repeat left top 8px; 
+    background-size:2px 18px; 
+}
+
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.pro .list_box .box .list{
+    width:95%;
+    text-align:center;
+    box-shadow: #ddd 5px 5px 5px;
+}
+.pro .list_box .box .list .text_box i{
+    display: inline-block;
+    background:url(../images/pro_bg.png)no-repeat center center; 
+    background-size:16px 16px; 
+    width:20px;
+    height:20px;
+    position: absolute;
+    right:10px;
+    bottom:calc(50% - 10px);
+    z-index: 11;
+}
+.pro .list_box .box .list .text_box h3{
+    color:#530a49;
+    font-size:15px;
+    line-height:25px;
+    padding:5px 15px;
+    margin:0 10px;
+    background:url(../images/pro_bg2.png)no-repeat left top 8px; 
+    background-size:2px 18px; 
+}
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.pro .list_box .box .list{
+    width:95%;
+    text-align:center;
+    box-shadow: #ddd 5px 5px 5px;
+}
+.pro .list_box .box .list .text_box i{
+    display: inline-block;
+    background:url(../images/pro_bg.png)no-repeat center center; 
+    background-size:16px 16px; 
+    width:20px;
+    height:20px;
+    position: absolute;
+    right:10px;
+    bottom:calc(50% - 10px);
+    z-index: 11;
+}
+.pro .list_box .box .list .text_box h3{
+    color:#530a49;
+    font-size:15px;
+    line-height:25px;
+    padding:5px 15px;
+    margin:0 10px;
+    background:url(../images/pro_bg2.png)no-repeat left top 8px; 
+    background-size:2px 18px; 
+}
+
+
+
+
+}
+
+
+
+
+/*.prov*/
+.prov{
+    padding:30px 0;
+}
+.prov .main{
+    max-width:1300px;
+}
+.prov .prov_box{
+    position: relative;
+}
+.prov .prov_box .list_box{
+    width:44%;
+    position: absolute;
+    right:0;
+    top:0;
+}
+.prov .prov_box .list_box h3{
+    color:#530a49;
+    font-size:27px;
+    line-height:47px;
+    margin-bottom:40px;
+    border-bottom:1px solid #530a49;
+}
+.prov .prov_box .list_box .text{
+    color:#530a49;
+    font-size:20px;
+    line-height:30px;
+}
+.prov .prov_box .list_box .text p{
+    margin-bottom:30px;
+}
+.prov .prov_box .list_box .text p i{
+    max-width:20%;
+    float:left;
+}
+.prov .prov_box .list_box .text p span{
+    max-width:80%;
+    float:left;
+}
+.prov .prov_box .list_box .text_more{
+    color:#530a49;
+    font-size:20px;
+    line-height:30px;
+    margin-top:20px;
+}
+.prov .prov_box .list_box .text_more a{
+    display: inline-block;
+    margin-right:20px;
+}
+.prov .prov_box .prabd{
+    float:left;
+    width:53%;
+    text-align:center;
+}
+.prov .prov_box .prabd .prabd_swiper{
+    width:100%;
+    display: inline-block;
+    overflow: hidden;
+}
+.prov .prov_box .prabd .prabd_swiper .swiper-slide{
+    text-align:center;
+}
+.prov .prov_box .prabd .prabd_swiper .swiper-slide .img_box{
+    display: inline-block;
+}
+.prov .prov_box .prahd{
+    float:right;
+    width:44%;
+    margin-top:43%;
+    text-align:center;
+    position: relative;
+}
+.prov .prov_box .prahd .sprev,
+.prov .prov_box .prahd .snext{
+    width:35px;
+    height:98%;
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    z-index: 11;
+    outline: none;
+}
+.prov .prov_box .prahd .sprev{
+    left:0;
+    border-radius: 25px 0 0 25px;
+    background: #530a49 url(../images/l_bg.png)no-repeat center center;
+    background-size:18px 30px; 
+}
+.prov .prov_box .prahd .snext{
+    right:0;
+    border-radius: 0 25px 25px 0;
+    background: #530a49 url(../images/r_bg.png)no-repeat center center;
+    background-size:18px 30px; 
+}
+
+
+.prov .prov_box .prahd .prahd_swiper{
+    width:70%;
+    display: inline-block;
+    overflow: hidden;
+}
+.prov .prov_box .prahd .prahd_swiper .swiper-slide{
+    text-align:center;
+}
+.prov .prov_box .prahd .prahd_swiper .swiper-slide .img_box{
+    border:1px solid #ddd;
+    display: inline-block;
+}
+.prov .prov_box .prahd .prahd_swiper .swiper-slide-thumb-active .img_box{
+    border:1px solid #530a49;
+}
+
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+.prov .prov_box .prabd{
+    float:none;
+    width:70%;
+    margin:0 auto;
+}
+.prov .prov_box .prahd{
+    float:none;
+    width:100%;
+    margin-top:30px;
+    text-align:center;
+}
+.prov .prov_box .prahd .prahd_swiper{
+    width:44%;
+    display: inline-block;
+}
+.prov .prov_box .prahd .sprev{
+    left:16.5%;
+}
+.prov .prov_box .prahd .snext{
+    right:16.5%;
+}
+.prov .prov_box .list_box{
+    width:70%;
+    margin:30px auto 0 auto;
+    position: static;
+    right:none;
+    top:none;
+}
+
+
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.prov .prov_box .prabd{
+    float:none;
+    width:96%;
+    margin:0 auto;
+}
+.prov .prov_box .prahd{
+    float:none;
+    width:100%;
+    margin-top:30px;
+    text-align:center;
+}
+.prov .prov_box .prahd .prahd_swiper{
+    width:66%;
+    display: inline-block;
+}
+.prov .prov_box .prahd .sprev{
+    left:2%;
+}
+.prov .prov_box .prahd .snext{
+    right:2%;
+}
+.prov .prov_box .list_box{
+    width:96%;
+    margin:30px auto 0 auto;
+    position: static;
+    right:none;
+    top:none;
+}
+
+
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.prov .prov_box .prabd{
+    float:none;
+    width:96%;
+    margin:0 auto;
+}
+.prov .prov_box .prahd{
+    float:none;
+    width:100%;
+    margin-top:30px;
+    text-align:center;
+}
+.prov .prov_box .prahd .prahd_swiper{
+    width:70%;
+    display: inline-block;
+}
+
+.prov .prov_box .prahd .sprev{
+    left:2%;
+}
+.prov .prov_box .prahd .snext{
+    right:2%;
+}
+.prov .prov_box .list_box{
+    width:96%;
+    margin:30px auto 0 auto;
+    position: static;
+    right:none;
+    top:none;
+}
+
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.prov .prov_box .prabd{
+    float:none;
+    width:96%;
+    margin:0 auto;
+}
+.prov .prov_box .prahd{
+    float:none;
+    width:100%;
+    margin-top:30px;
+    text-align:center;
+}
+.prov .prov_box .prahd .prahd_swiper{
+     width:70%;
+}
+
+.prov .prov_box .prahd .sprev{
+    left:2%;
+    background: #530a49 url(../images/l_bg.png)no-repeat center center;
+    background-size:18px 30px; 
+}
+.prov .prov_box .prahd .snext{
+    right:2%;
+    background: #530a49 url(../images/r_bg.png)no-repeat center center;
+    background-size:18px 30px; 
+}
+.prov .prov_box .list_box{
+    width:96%;
+    margin:30px auto 0 auto;
+    position: static;
+    right:none;
+    top:none;
+}
+
+
+
+}
+
+
+
+/*.prov2*/
+.prov2{
+    padding:40px 0 60px 0;
+    background: #e7e7e7;
+}
+.prov2 .main{
+    max-width:1300px;
+}
+.prov2 .htit2 {
+    text-align:center;
+    margin-bottom:30px;
+}
+.prov2 .htit2 h2{
+    color:#530a49;
+}
+.prov2 .prov2_box{
+    position: relative;
+}
+.prov2 .prov2_box .prov2_sprev,
+.prov2 .prov2_box .prov2_snext{
+    width:60px;
+    height:160px;
+    border:1px solid #aaa;
+    cursor: pointer;
+    position: absolute;
+    top:calc(50% - 80px);
+    z-index: 20;
+    outline: none;
+}
+.prov2 .prov2_box .prov2_sprev{
+    left:5%;
+    background: url(../images/l_bg2.png)no-repeat center center;
+    background-size:35px 60px; 
+}
+.prov2 .prov2_box .prov2_snext{
+    right:5%;
+    background: url(../images/r_bg2.png)no-repeat center center;
+    background-size:35px 60px; 
+} 
+.prov2 .prov2_box .prov2_swiper{
+    width:62%;
+    overflow: hidden;
+    margin:0 auto;
+}
+
+
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.prov2 .prov2_box .sprev,
+.prov2 .prov2_box .snext{
+    width:30px;
+    height:90px;
+    border:1px solid #aaa;
+    position: absolute;
+    top:calc(50% - 45px);
+    z-index: 20;
+    outline: none;
+}
+.prov2 .prov2_box .sprev{
+    left:2%;
+    background: url(../images/l_bg2.png)no-repeat center center;
+    background-size:15px 30px; 
+}
+.prov2 .prov2_box .snext{
+    right:2%;
+    background: url(../images/r_bg2.png)no-repeat center center;
+    background-size:15px 30px;
+} 
+.prov2 .prov2_box .prov2_swiper{
+    width:96%;
+    overflow: hidden;
+    margin:0 auto;
+}
+
+
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.prov2 .prov2_box .sprev,
+.prov2 .prov2_box .snext{
+    width:30px;
+    height:90px;
+    border:1px solid #aaa;
+    position: absolute;
+    top:calc(50% - 45px);
+    z-index: 20;
+    outline: none;
+}
+.prov2 .prov2_box .sprev{
+    left:2%;
+    background: url(../images/l_bg2.png)no-repeat center center;
+    background-size:15px 30px; 
+}
+.prov2 .prov2_box .snext{
+    right:2%;
+    background: url(../images/r_bg2.png)no-repeat center center;
+    background-size:15px 30px;
+} 
+.prov2 .prov2_box .prov2_swiper{
+    width:96%;
+    overflow: hidden;
+    margin:0 auto;
+}
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+
+.prov2 .prov2_box .sprev,
+.prov2 .prov2_box .snext{
+    width:30px;
+    height:90px;
+    border:1px solid #aaa;
+    position: absolute;
+    top:calc(50% - 45px);
+    z-index: 20;
+    outline: none;
+}
+.prov2 .prov2_box .sprev{
+    left:2%;
+    background: url(../images/l_bg2.png)no-repeat center center;
+    background-size:15px 30px; 
+}
+.prov2 .prov2_box .snext{
+    right:2%;
+    background: url(../images/r_bg2.png)no-repeat center center;
+    background-size:15px 30px;
+} 
+.prov2 .prov2_box .prov2_swiper{
+    width:96%;
+    overflow: hidden;
+    margin:0 auto;
+}
+
+
+}
+
+
+
+
+
+/*.prov3*/
+.prov3{
+    padding:40px 0 100px 0;
+}
+.prov3 .main{
+    max-width:1300px;
+}
+.prov3 .list_box .htit h2{
+    color:#530a49;
+    font-size:24px;
+    line-height:34px;
+    text-indent:15px;
+    background:url(../images/pro_bg2.png)no-repeat left 5px top 4px; 
+    background-size:4px 30px; 
+}
+.prov3 .list_box .htit{
+    margin-bottom:40px;
+    padding-bottom:20px;
+    border-bottom:1px solid #530a49;
+}
+.prov3 .list_box .box{
+    text-align:center;
+}
+.prov3 .list_box .box .list{
+    width:96%;
+    display: inline-block;
+    text-align:left;
+    margin:0 auto;
+} 
+.prov3 .list_box .box .list .pic{
+    width:100%;
+    display: inline-block;
+    vertical-align:middle;
+}
+.prov3 .list_box .box .list .pic img{
+    width:100%;
+}
+.prov3 .list_box .list .text_box h3{
+    color:#530a49;
+    font-size:18px;
+    line-height:28px;
+    padding:5px 15px;
+    margin:0 10px;
+    background:url(../images/pro_bg2.png)no-repeat left top 10px; 
+    background-size:2px 20px; 
+}
+.prov3 .list_box .list .text_box  .text{
+    color:#4d4d4d;
+    font-size:12px;
+    line-height:25px;
+    padding-bottom:10px;
+    margin:0 10px;
+}
+
+
+
+
+
+
+
+
+
+/*.news_v*/
+.news_v{
+    padding:40px 0 60px 0;
+}
+.news_v .main{
+    max-width:1300px;
+}
+.news_v .list .htit{
+    text-align:center;
+}
+.news_v .list .htit h2{
+    font-size:24px;
+    line-height:34px;
+}
+.news_v .list .text{
+    color:#444;
+    font-size:17px;
+    line-height:30px;
+}
+.news_v .pages{
+    margin-top:40px;
+}
+
+
+
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+    .news_v .list{
+    width:96%;
+    margin:0 auto;
+}
+
+
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+.news_v .list{
+    width:96%;
+    margin:0 auto;
+}
+
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+.news_v .list{
+    width:96%;
+    margin:0 auto;
+}
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+.news_v .list{
+    width:96%;
+    margin:0 auto;
+}
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+.news_v .list{
+    width:94%;
+    margin:0 auto;
+}
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+.news_v .list{
+    width:94%;
+    margin:0 auto;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/*当页面大于1200px时，大屏幕主要是PC端*/
+@media (min-width:1200px){
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width:992px) and (max-width:1199px){
+
+}
+
+
+/*md*/
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width:768px) and (max-width:991px){
+
+
+
+}
+
+
+/*sm*/
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width:480px) and (max-width:767px){
+
+
+}
+
+/*xm*/
+/*在371和479像素之间的屏幕里小屏幕手机*/
+@media (min-width:371px) and (max-width:479px){
+
+
+}
+
+
+/*xs*/
+/*在小于370像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width:370px){
+
+
+
+}

@@ -1,0 +1,134 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<div data-toggle="distpicker">
+  <select></select>
+  <select></select>
+  <select></select>
+</div>
+
+
+
+<br>
+<div data-toggle="distpicker">
+  <select data-province="---- 选择省 ----"></select>
+  <select data-city="---- 选择市 ----"></select>
+  <select data-district="---- 选择区 ----"></select>
+</div>
+
+
+
+
+<br>
+<div data-toggle="distpicker">
+  <select data-province="浙江省"></select>
+  <select data-city="杭州市"></select>
+  <select data-district="西湖区"></select>
+</div>
+
+
+
+
+<br>
+<div id="distpicker1">
+  <select></select>
+  <select></select>
+  <select></select>
+</div>
+
+
+
+<br>
+<div id="distpicker2">
+  <select></select>
+  <select></select>
+  <select></select>
+</div>
+
+
+
+
+<br>
+<div id="distpicker3">
+  <select></select>
+  <select></select>
+  <select></select>
+</div>
+
+
+
+<br>
+<div data-toggle="distpicker">
+  <select></select>
+  <select></select>
+</div>
+
+
+
+<br>
+<div data-toggle="distpicker">
+  <select></select>
+</div>
+
+
+
+
+<br>
+<div id="distpicker4">
+  <select></select>
+  <select></select>
+  <select></select>
+</div>
+
+
+
+<br>
+<div id="distpicker5">
+  <select></select>
+  <select></select>
+  <select></select>
+</div>
+
+
+
+<!-- 
+<script src="plug/city/js/distpicker.data.js"></script>
+<script src="plug/city/js/distpicker.js"></script>
+ -->
+
+<script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/distpicker.data.js"></script>
+<script src="js/distpicker.js"></script>
+<script>
+
+$("#distpicker1").distpicker();
+
+$("#distpicker2").distpicker({
+  province: "---- 所在省 ----",
+  city: "---- 所在市 ----",
+  district: "---- 所在区 ----"
+});
+
+$("#distpicker3").distpicker({
+  province: "浙江省",
+  city: "杭州市",
+  district: "西湖区"
+});
+
+$("#distpicker4").distpicker({
+  placeholder: false
+});
+
+$("#distpicker5").distpicker({
+  autoSelect: false
+});
+
+</script>
+</body>
+</html>
